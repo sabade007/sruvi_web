@@ -7,7 +7,6 @@
     "contact": "Contact Us"
   },
   "header": {
-    "contactButton": "Contact Us",
     "logoAlt": "Sruvi Logo"
   },
   "hero": {
@@ -26,11 +25,18 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Our Services - Comprehensive IT Solutions | Sruvi",
+      "description": "Explore our comprehensive IT services including web development, mobile apps, cloud solutions, AI & machine learning, digital marketing, and IT consulting."
+    },
     "badge": "Our Services",
     "title": "Comprehensive Digital Solutions",
- 
     "subtitle": "From concept to deployment, we deliver cutting-edge solutions that drive your business forward",
     "learnMore": "Learn More",
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive IT solutions tailored to transform your business and drive digital innovation"
+    },
     "cta": {
       "title": "Ready to Transform Your Business?",
       "subtitle": "Let's discuss how we can help you achieve your digital goals",
@@ -41,34 +47,275 @@
       "web": {
         "title": "Web Development",
         "description": "Modern, responsive websites and web applications built with the latest technologies",
-        "features": ["Responsive Design", "SEO Optimized", "Performance Focused", "Modern UI/UX"]
+        "features": ["Responsive Design", "SEO Optimized", "Performance Focused", "Modern UI/UX"],
+        "detailed": {
+          "title": "Web Development",
+          "subtitle": "Modern, responsive websites and web applications built with cutting-edge technologies",
+          "description": "We create stunning, high-performance websites and web applications that not only look great but also deliver exceptional user experiences. Our web development services cover everything from simple landing pages to complex enterprise applications.",
+          "features": [
+            "React & Next.js Development",
+            "E-commerce Solutions", 
+            "Progressive Web Apps",
+            "API Integration"
+          ],
+          "technologies": ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "MongoDB"],
+          "process": [
+            "Requirements Analysis",
+            "UI/UX Design",
+            "Development & Testing",
+            "Deployment & Maintenance"
+          ],
+          "benefits": [
+            "Responsive across all devices",
+            "SEO optimized for better visibility",
+            "Fast loading times",
+            "Scalable architecture"
+          ]
+        }
       },
       "mobile": {
         "title": "Mobile Apps",
         "description": "Native and cross-platform mobile applications for iOS and Android",
-        "features": ["Native Performance", "Cross-Platform", "App Store Ready", "Offline Support"]
+        "features": ["Native Performance", "Cross-Platform", "App Store Ready", "Offline Support"],
+        "detailed": {
+          "title": "Mobile Development",
+          "subtitle": "Native and cross-platform mobile applications for iOS and Android platforms",
+          "description": "We develop mobile applications that provide seamless user experiences across all devices. Whether you need a native app for specific platforms or a cross-platform solution, we deliver high-quality mobile applications that drive engagement and business growth.",
+          "features": [
+            "React Native Apps",
+            "Flutter Development",
+            "Native iOS/Android",
+            "App Store Optimization"
+          ],
+          "technologies": ["React Native", "Flutter", "Swift", "Kotlin", "Firebase", "AWS"],
+          "process": [
+            "Platform Strategy",
+            "UI/UX Design",
+            "Development & Testing",
+            "App Store Submission"
+          ],
+          "benefits": [
+            "Native performance on all devices",
+            "Cross-platform compatibility",
+            "App store optimization",
+            "Offline functionality"
+          ]
+        }
       },
-      "custom": {
-        "title": "Custom Software",
-        "description": "Tailored software solutions designed specifically for your business needs",
-        "features": ["Custom Logic", "Scalable Architecture", "Integration Ready", "24/7 Support"]
+      "cloud": {
+        "title": "Cloud Solutions",
+        "description": "Scalable cloud infrastructure and DevOps solutions for modern applications",
+        "features": ["AWS/Azure/GCP Setup", "Docker & Kubernetes", "CI/CD Pipelines", "Serverless Architecture"],
+        "detailed": {
+          "title": "Cloud Solutions",
+          "subtitle": "Scalable cloud infrastructure and DevOps solutions for modern applications",
+          "description": "We help businesses leverage the power of cloud computing to scale their operations efficiently. Our cloud solutions include infrastructure setup, migration, and ongoing management to ensure optimal performance and cost-effectiveness.",
+          "features": [
+            "AWS/Azure/GCP Setup",
+            "Docker & Kubernetes",
+            "CI/CD Pipelines",
+            "Serverless Architecture"
+          ],
+          "technologies": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform"],
+          "process": [
+            "Cloud Strategy Planning",
+            "Infrastructure Design",
+            "Migration & Setup",
+            "Monitoring & Optimization"
+          ],
+          "benefits": [
+            "Scalable infrastructure",
+            "Cost optimization",
+            "High availability",
+            "Automated deployments"
+          ]
+        }
       },
-      "backend": {
-        "title": "Backend Development",
-        "description": "Robust server-side solutions and APIs for your applications",
-        "features": ["RESTful APIs", "Database Design", "Security First", "Cloud Ready"]
+      "ai": {
+        "title": "AI & Machine Learning",
+        "description": "Intelligent solutions powered by artificial intelligence and machine learning",
+        "features": ["Custom AI Models", "Data Analytics", "Chatbot Development", "Predictive Analytics"],
+        "detailed": {
+          "title": "AI & Machine Learning",
+          "subtitle": "Intelligent solutions powered by artificial intelligence and machine learning",
+          "description": "We harness the power of artificial intelligence and machine learning to create intelligent solutions that automate processes, analyze data, and provide valuable insights. Our AI solutions help businesses make data-driven decisions and improve operational efficiency.",
+          "features": [
+            "Custom AI Models",
+            "Data Analytics",
+            "Chatbot Development",
+            "Predictive Analytics"
+          ],
+          "technologies": ["Python", "TensorFlow", "PyTorch", "OpenAI", "AWS SageMaker", "Google AI"],
+          "process": [
+            "Data Analysis",
+            "Model Development",
+            "Training & Testing",
+            "Integration & Deployment"
+          ],
+          "benefits": [
+            "Automated decision making",
+            "Improved efficiency",
+            "Data-driven insights",
+            "Competitive advantage"
+          ]
+        }
       },
-      "uiux": {
-        "title": "UI/UX Design",
-        "description": "Beautiful, intuitive user interfaces that enhance user experience",
-        "features": ["User Research", "Wireframing", "Prototyping", "Design Systems"]
+      "marketing": {
+        "title": "Digital Marketing",
+        "description": "Strategic digital marketing solutions to boost your online presence and growth",
+        "features": ["SEO Optimization", "Social Media Marketing", "Content Strategy", "Analytics & Reporting"],
+        "detailed": {
+          "title": "Digital Marketing",
+          "subtitle": "Strategic digital marketing solutions to boost your online presence and growth",
+          "description": "We create comprehensive digital marketing strategies that increase your online visibility, drive traffic, and convert visitors into customers. Our data-driven approach ensures measurable results and continuous optimization.",
+          "features": [
+            "SEO Optimization",
+            "Social Media Marketing",
+            "Content Strategy",
+            "Analytics & Reporting"
+          ],
+          "technologies": ["Google Analytics", "Google Ads", "Facebook Ads", "HubSpot", "Mailchimp", "SEMrush"],
+          "process": [
+            "Market Research",
+            "Strategy Development",
+            "Implementation",
+            "Analysis & Optimization"
+          ],
+          "benefits": [
+            "Increased online visibility",
+            "Higher conversion rates",
+            "Measurable results",
+            "Cost-effective marketing"
+          ]
+        }
       },
-      "devops": {
-        "title": "DevOps & Cloud",
-        "description": "Streamlined deployment and cloud infrastructure management",
-        "features": ["CI/CD Pipelines", "Cloud Migration", "Monitoring", "Automation"]
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Expert guidance and strategic planning for your digital transformation journey",
+        "features": ["Technology Strategy", "Digital Transformation", "Project Management", "Technical Audits"],
+        "detailed": {
+          "title": "IT Consulting",
+          "subtitle": "Expert guidance and strategic planning for your digital transformation journey",
+          "description": "We provide strategic IT consulting services to help businesses navigate their digital transformation journey. Our expert consultants work closely with you to develop technology strategies that align with your business goals.",
+          "features": [
+            "Technology Strategy",
+            "Digital Transformation",
+            "Project Management",
+            "Technical Audits"
+          ],
+          "technologies": ["Strategic Planning", "Technology Assessment", "Process Optimization", "Change Management"],
+          "process": [
+            "Business Analysis",
+            "Technology Assessment",
+            "Strategy Development",
+            "Implementation Support"
+          ],
+          "benefits": [
+            "Clear technology roadmap",
+            "Reduced implementation risks",
+            "Improved efficiency",
+            "Competitive advantage"
+          ]
+        }
       }
     }
+  },
+  "products": {
+    "meta": {
+      "title": "Our Products - Innovative Software Solutions | Sruvi",
+      "description": "Explore our innovative software products including INDRYVE platform, SaaS solutions, mobile apps, and enterprise software."
+    },
+    "hero": {
+      "title": "Our Products",
+      "subtitle": "Innovative software solutions and digital products designed to solve real-world problems"
+    },
+    "featured": {
+      "badge": "Featured Product",
+      "title": "INDRYVE Platform",
+      "subtitle": "An enterprise-grade file management platform powered by artificial intelligence. Built for modern businesses that need secure, scalable, and intelligent document management.",
+      "features": [
+        "AI-powered file organization",
+        "Enterprise-grade security",
+        "Scalable cloud infrastructure",
+        "Advanced collaboration tools"
+      ],
+      "requestDemo": "Request Demo",
+      "learnMore": "Learn More"
+    },
+    "categories": {
+      "title": "Product Categories",
+      "subtitle": "Explore our range of innovative products designed for different business needs",
+      "saas": {
+        "title": "SaaS Solutions",
+        "description": "Cloud-based software solutions that scale with your business needs.",
+        "features": [
+          "Business Management Tools",
+          "Customer Relationship Management",
+          "Project Management Platforms",
+          "Analytics & Reporting Tools"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform mobile apps for iOS and Android.",
+        "features": [
+          "Consumer Apps",
+          "Business Applications",
+          "E-commerce Mobile Apps",
+          "Utility & Productivity Apps"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Software",
+        "description": "Custom enterprise solutions built for large organizations.",
+        "features": [
+          "Custom ERP Systems",
+          "Workflow Automation",
+          "Data Management Platforms",
+          "Integration Solutions"
+        ]
+      }
+    },
+    "techStack": {
+      "title": "Built with Modern Technologies",
+      "subtitle": "Our products are built using cutting-edge technologies for performance, security, and scalability"
+    },
+    "cta": {
+      "title": "Interested in Our Products?",
+      "subtitle": "Get in touch to learn more about our products and how they can benefit your business.",
+      "scheduleDemo": "Schedule a Demo",
+      "contactSales": "Contact Sales"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Our Blog - Technology Insights & Tutorials | Sruvi",
+      "description": "Explore our latest insights, tutorials, and thought leadership on technology, development, and digital innovation."
+    },
+    "hero": {
+      "title": "Our Blog",
+      "subtitle": "Insights, tutorials, and thought leadership on technology, development, and digital innovation"
+    },
+    "categories": {
+      "all": "All",
+      "technology": "Technology",
+      "development": "Development",
+      "cloud": "Cloud",
+      "mobile": "Mobile",
+      "security": "Security",
+      "strategy": "Strategy"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Subscribe to our newsletter for the latest insights and updates",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "readTime": "min read",
+    "noPosts": "No blog posts found",
+    "loading": "Loading blog posts..."
   },
   "about": {
     "badge": "About Us",
@@ -191,6 +438,10 @@
     "badge": "Get In Touch",
     "title": "Let's Start a Conversation",
     "subtitle": "Ready to transform your ideas into reality? Get in touch with us and let's discuss how we can help bring your vision to life.",
+    "meta": {
+      "title": "Contact Us - Get In Touch | Sruvi",
+      "description": "Ready to start your project? Contact Sruvi for web development, mobile apps, cloud solutions, and IT consulting services."
+    },
     "form": {
       "title": "Send us a Message",
       "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
@@ -200,9 +451,39 @@
       "emailPlaceholder": "Enter your email",
       "company": "Company",
       "companyPlaceholder": "Enter your company name",
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your project...",
-      "submit": "Send Message"
+      "projectName": "Project Name",
+      "projectNamePlaceholder": "Enter your project name",
+      "projectBudget": "Project Budget",
+      "projectBudgetPlaceholder": "Select your budget range",
+      "projectTimeline": "Project Timeline",
+      "projectTimelinePlaceholder": "Select your timeline",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "message": "Project Details",
+      "messagePlaceholder": "Tell us about your project requirements, goals, and any specific features you need...",
+      "submit": "Send Message",
+      "budgetOptions": {
+        "under10k": "Under $10,000",
+        "10k25k": "$10,000 - $25,000",
+        "25k50k": "$25,000 - $50,000",
+        "50k100k": "$50,000 - $100,000",
+        "over100k": "Over $100,000",
+        "discuss": "Let's discuss"
+      },
+      "timelineOptions": {
+        "urgent": "Urgent (1-2 months)",
+        "3months": "3 months",
+        "6months": "6 months",
+        "flexible": "Flexible timeline",
+        "discuss": "Let's discuss"
+      },
+      "typeOptions": {
+        "new": "New Project",
+        "modification": "Modification/Update",
+        "maintenance": "Maintenance & Support",
+        "consulting": "Consulting",
+        "other": "Other"
+      }
     },
     "info": {
       "title": "Contact Information",

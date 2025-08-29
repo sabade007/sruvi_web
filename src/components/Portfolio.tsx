@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Button } from "@heroui/react";
 import { ArrowRight, ExternalLink, FolderOpen, Users, Shield, Zap, Star, Globe, Database, Lock } from "lucide-react";
 
@@ -26,7 +26,7 @@ export default function Portfolio() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: easeOut
+
       }
     }
   };
@@ -85,8 +85,7 @@ export default function Portfolio() {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div
@@ -97,8 +96,7 @@ export default function Portfolio() {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -159,7 +157,7 @@ export default function Portfolio() {
                 <motion.div
                   className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center shadow-2xl"
                   animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{ duration: 4, repeat: Infinity }}
                 >
                   <Globe className="w-10 h-10 text-white" />
                 </motion.div>
@@ -181,6 +179,10 @@ export default function Portfolio() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                                  <Button 
+                   as="a"
+                   href="https://indryve.org"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300"
                    size="lg"
                  >
@@ -188,6 +190,10 @@ export default function Portfolio() {
                    <ExternalLink className="ml-2 w-4 h-4" />
                  </Button>
                 <Button 
+                  as="a"
+                  href="https://indryve.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   variant="bordered" 
                   className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300"
                   size="lg"
@@ -350,22 +356,26 @@ export default function Portfolio() {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               {t('portfolio.cta.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
-                size="lg"
-              >
-                {t('portfolio.cta.primaryButton')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                variant="bordered" 
-                className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
-                size="lg"
-              >
-                {t('portfolio.cta.secondaryButton')}
-              </Button>
-            </div>
+                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+               <Button 
+                 as="a"
+                 href="/contact"
+                 className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
+                 size="lg"
+               >
+                 {t('portfolio.cta.primaryButton')}
+                 <ArrowRight className="ml-2 w-5 h-5" />
+               </Button>
+               <Button 
+                 as="a"
+                 href="tel:+919731171611"
+                 variant="bordered" 
+                 className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
+                 size="lg"
+               >
+                 {t('portfolio.cta.secondaryButton')}
+               </Button>
+             </div>
           </motion.div>
         </motion.div>
       </div>

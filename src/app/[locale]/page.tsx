@@ -8,7 +8,7 @@ import Portfolio from "../../components/Portfolio"; // New import
 import Testimonials from "../../components/Testimonials"; // New import
 import Contact from "../../components/Contact"; // New import
 import Footer from "../../components/Footer"; // New import
-import FloatingLanguageSelector from "../../components/FloatingLanguageSelector";
+
 
 export default function Home() {
   const t = useTranslations();
@@ -23,7 +23,7 @@ export default function Home() {
              <Testimonials /> {/* New component added */}
              <Contact /> {/* New component added */}
              <Footer /> {/* New component added */}
-             <FloatingLanguageSelector />
+       
     </div>
   );
 }

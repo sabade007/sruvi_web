@@ -69,10 +69,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Github, href: "#", label: "GitHub" }
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sruvi-inc-54671a381", label: "LinkedIn" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
+    // { icon: Instagram, href: "#", label: "Instagram" },
+    // { icon: Github, href: "#", label: "GitHub" }
   ];
 
   return (

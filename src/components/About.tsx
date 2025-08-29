@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Button } from "@heroui/react";
 import { ArrowRight, Users, Target, Award, Clock, CheckCircle, Star, Zap, Heart, Shield } from "lucide-react";
 
@@ -26,7 +26,7 @@ export default function About() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: easeOut
+
       }
     }
   };
@@ -76,8 +76,7 @@ export default function About() {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div
@@ -88,8 +87,7 @@ export default function About() {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -166,22 +164,26 @@ export default function About() {
                     {t('about.mission.content')}
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                  <Button 
-                    className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300"
-                    size="lg"
-                  >
-                    {t('about.mission.primaryButton')}
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                  <Button 
-                    variant="bordered" 
-                    className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                    size="lg"
-                  >
-                    {t('about.mission.secondaryButton')}
-                  </Button>
-                </div>
+                                 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                   <Button 
+                     as="a"
+                     href="/contact"
+                     className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300"
+                     size="lg"
+                   >
+                     {t('about.mission.primaryButton')}
+                     <ArrowRight className="ml-2 w-4 h-4" />
+                   </Button>
+                   <Button 
+                     as="a"
+                     href="tel:+919731171611"
+                     variant="bordered" 
+                     className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300"
+                     size="lg"
+                   >
+                     {t('about.mission.secondaryButton')}
+                   </Button>
+                 </div>
               </motion.div>
             </motion.div>
 
@@ -279,6 +281,8 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
+                as="a"
+                href="/contact"
                 className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
                 size="lg"
               >
@@ -286,6 +290,8 @@ export default function About() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
+                as="a"
+                href="tel:+919731171611"
                 variant="bordered" 
                 className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
                 size="lg"

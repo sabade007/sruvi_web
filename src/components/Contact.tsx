@@ -1,19 +1,28 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeOut } from 'framer-motion';
+import { useLocale } from 'next-intl';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Button, Input, Textarea } from "@heroui/react";
-import { Mail, Phone, MapPin, Send, MessageCircle, Globe, Linkedin, Twitter, Instagram, Github } from "lucide-react";
+import { Button, Input, Textarea, Select, SelectItem } from "@heroui/react";
+import { Mail, Phone, MapPin, Send, MessageCircle, Globe, Linkedin, Twitter, Instagram, Github, CheckCircle, AlertCircle } from "lucide-react";
 
 export default function Contact() {
   const t = useTranslations();
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
+    projectName: '',
+    projectBudget: '',
+    projectTimeline: '',
+    projectType: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -33,7 +42,7 @@ export default function Contact() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: easeOut
+
       }
     }
   };
@@ -45,17 +54,48 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          projectName: '',
+          projectBudget: '',
+          projectTimeline: '',
+          projectType: '',
+          message: ''
+        });
+        // Reset status after 5 seconds
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(result.error || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -83,14 +123,14 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Github, href: "#", label: "GitHub" }
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sruvi-inc-54671a381", label: "LinkedIn" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
+    // { icon: Instagram, href: "#", label: "Instagram" },
+    // { icon: Github, href: "#", label: "GitHub" }
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-background via-background to-primary/5 dark:from-background dark:via-background dark:to-primary/5 overflow-hidden">
+    <section className="relative pb-20 bg-gradient-to-br from-background via-background to-primary/5 dark:from-background dark:via-background dark:to-primary/5 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -101,8 +141,7 @@ export default function Contact() {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div
@@ -113,8 +152,7 @@ export default function Contact() {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -150,14 +188,14 @@ export default function Contact() {
           </motion.p>
         </motion.div>
 
-                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
+                 <div className="grid grid-cols-1 gap-16 mb-16">
            {/* Contact Form */}
            <motion.div
              variants={containerVariants}
              initial="hidden"
              whileInView="visible"
              viewport={{ once: true, amount: 0.3 }}
-             className="order-2 lg:order-1 h-full flex flex-col"
+             className="h-full flex flex-col"
            >
              <motion.div variants={itemVariants} className="mb-8">
                <h3 className="text-3xl font-bold mb-4 text-foreground">
@@ -169,6 +207,7 @@ export default function Contact() {
              </motion.div>
 
              <motion.form
+               id="contact-form"
                variants={itemVariants}
                onSubmit={handleSubmit}
                className="space-y-6 flex-1 flex flex-col"
@@ -216,6 +255,92 @@ export default function Contact() {
                  }}
                />
 
+               <Input
+                 type="text"
+                 label={t('contact.form.projectName')}
+                 placeholder={t('contact.form.projectNamePlaceholder')}
+                 value={formData.projectName}
+                 onChange={(e) => handleInputChange('projectName', e.target.value)}
+                 className="w-full"
+                 variant="bordered"
+                 classNames={{
+                   input: "text-foreground",
+                   inputWrapper: "border-divider/50 hover:border-primary focus-within:border-primary"
+                 }}
+               />
+
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 <Select
+                   label={t('contact.form.projectBudget')}
+                   placeholder={t('contact.form.projectBudgetPlaceholder')}
+                   selectedKeys={formData.projectBudget ? [formData.projectBudget] : []}
+                   onSelectionChange={(keys) => {
+                     const selected = Array.from(keys)[0] as string;
+                     handleInputChange('projectBudget', selected);
+                   }}
+                   className="w-full"
+                   variant="bordered"
+                   classNames={{
+                     trigger: "border-divider/50 hover:border-primary focus-within:border-primary",
+                     value: "text-foreground",
+                     popoverContent: "bg-background border-divider"
+                   }}
+                 >
+                   <SelectItem key="under10k" value="under10k">{t('contact.form.budgetOptions.under10k')}</SelectItem>
+                   <SelectItem key="10k25k" value="10k25k">{t('contact.form.budgetOptions.10k25k')}</SelectItem>
+                   <SelectItem key="25k50k" value="25k50k">{t('contact.form.budgetOptions.25k50k')}</SelectItem>
+                   <SelectItem key="50k100k" value="50k100k">{t('contact.form.budgetOptions.50k100k')}</SelectItem>
+                   <SelectItem key="over100k" value="over100k">{t('contact.form.budgetOptions.over100k')}</SelectItem>
+                   <SelectItem key="discuss" value="discuss">{t('contact.form.budgetOptions.discuss')}</SelectItem>
+                 </Select>
+
+                 <Select
+                   label={t('contact.form.projectTimeline')}
+                   placeholder={t('contact.form.projectTimelinePlaceholder')}
+                   selectedKeys={formData.projectTimeline ? [formData.projectTimeline] : []}
+                   onSelectionChange={(keys) => {
+                     const selected = Array.from(keys)[0] as string;
+                     handleInputChange('projectTimeline', selected);
+                   }}
+                   className="w-full"
+                   variant="bordered"
+                   classNames={{
+                     trigger: "border-divider/50 hover:border-primary focus-within:border-primary",
+                     value: "text-foreground",
+                     popoverContent: "bg-background border-divider"
+                   }}
+                 >
+                   <SelectItem key="urgent" value="urgent">{t('contact.form.timelineOptions.urgent')}</SelectItem>
+                   <SelectItem key="3months" value="3months">{t('contact.form.timelineOptions.3months')}</SelectItem>
+                   <SelectItem key="6months" value="6months">{t('contact.form.timelineOptions.6months')}</SelectItem>
+                   <SelectItem key="flexible" value="flexible">{t('contact.form.timelineOptions.flexible')}</SelectItem>
+                   <SelectItem key="discuss" value="discuss">{t('contact.form.timelineOptions.discuss')}</SelectItem>
+                 </Select>
+               </div>
+
+               <Select
+                 label={t('contact.form.projectType')}
+                 placeholder={t('contact.form.projectTypePlaceholder')}
+                 selectedKeys={formData.projectType ? [formData.projectType] : []}
+                 onSelectionChange={(keys) => {
+                   const selected = Array.from(keys)[0] as string;
+                   handleInputChange('projectType', selected);
+                 }}
+                 className="w-full"
+                 variant="bordered"
+                 classNames={{
+                   trigger: "border-divider/50 hover:border-primary focus-within:border-primary",
+                   value: "text-foreground",
+                   popoverContent: "bg-background border-divider"
+                 }}
+               >
+                 <SelectItem key="new" value="new">{t('contact.form.typeOptions.new')}</SelectItem>
+                 <SelectItem key="modification" value="modification">{t('contact.form.typeOptions.modification')}</SelectItem>
+                 <SelectItem key="maintenance" value="maintenance">{t('contact.form.typeOptions.maintenance')}</SelectItem>
+                 <SelectItem key="consulting" value="consulting">{t('contact.form.typeOptions.consulting')}</SelectItem>
+                 <SelectItem key="other" value="other">{t('contact.form.typeOptions.other')}</SelectItem>
+               </Select>
+
                <Textarea
                  label={t('contact.form.message')}
                  placeholder={t('contact.form.messagePlaceholder')}
@@ -230,13 +355,38 @@ export default function Contact() {
                  }}
                />
 
+               {/* Status Messages */}
+               {submitStatus === 'success' && (
+                 <div className="flex items-center gap-2 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl text-green-700 dark:text-green-300">
+                   <CheckCircle className="w-5 h-5" />
+                   <span>Thank you! Your message has been sent successfully.</span>
+                 </div>
+               )}
+
+               {submitStatus === 'error' && (
+                 <div className="flex items-center gap-2 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-700 dark:text-red-300">
+                   <AlertCircle className="w-5 h-5" />
+                   <span>{errorMessage}</span>
+                 </div>
+               )}
+
                <Button
                  type="submit"
-                 className="w-full bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg py-6 rounded-2xl"
+                 disabled={isSubmitting}
+                 className="w-full bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg py-6 rounded-2xl disabled:opacity-50 disabled:cursor-not-allowed"
                  size="lg"
                >
-                 Send Message
-                 <Send className="ml-2 w-5 h-5" />
+                 {isSubmitting ? (
+                   <>
+                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                     Sending...
+                   </>
+                 ) : (
+                   <>
+                     Send Message
+                     <Send className="ml-2 w-5 h-5" />
+                   </>
+                 )}
                </Button>
              </motion.form>
            </motion.div>
@@ -247,7 +397,7 @@ export default function Contact() {
              initial="hidden"
              whileInView="visible"
              viewport={{ once: true, amount: 0.3 }}
-             className="order-1 lg:order-2 h-full flex flex-col"
+             className="h-full flex flex-col"
            >
              <motion.div variants={itemVariants} className="mb-8">
                <h3 className="text-3xl font-bold mb-4 text-foreground">
@@ -264,7 +414,10 @@ export default function Contact() {
                  <motion.div
                    key={index}
                    variants={itemVariants}
-                   className="flex items-start gap-4 p-6 bg-background/80 backdrop-blur-xl border border-divider/50 rounded-2xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
+                   className={`flex items-start gap-4 p-6 bg-background/80 backdrop-blur-xl border border-divider/50 rounded-2xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 ${
+                     info.title === 'Call Us' ? 'cursor-pointer' : ''
+                   }`}
+                   onClick={info.title === 'Call Us' ? () => window.open('tel:+919731171611') : undefined}
                  >
                    <div className={`w-12 h-12 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center shadow-lg`}>
                      <info.icon className="w-6 h-6 text-white" />
@@ -366,6 +519,8 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
+                as="a"
+                href="tel:+919731171611"
                 className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
                 size="lg"
               >
@@ -373,6 +528,8 @@ export default function Contact() {
                 <Phone className="ml-2 w-5 h-5" />
               </Button>
               <Button 
+                as="a"
+                href={`/${locale}/products`}
                 variant="bordered" 
                 className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
                 size="lg"

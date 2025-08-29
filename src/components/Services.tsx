@@ -1,9 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Button } from "@heroui/react";
-import { ArrowRight, Globe, Smartphone, Code, Database, Palette, Shield, Zap, Users, BarChart3 } from "lucide-react";
+import { ArrowRight, Globe, Smartphone, Code, Database, Palette, Shield, Zap, Users, BarChart3, Cloud, Brain, TrendingUp, Lightbulb } from "lucide-react";
+import { Link } from '@/i18n/navigation';
 
 export default function Services() {
   const t = useTranslations();
@@ -26,52 +27,67 @@ export default function Services() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: easeOut
+
       }
     }
   };
 
+  // Service-specific features arrays
+  const serviceFeatures = {
+    web: ["React/Next.js", "Responsive Design", "SEO Optimized", "Performance Focused"],
+    mobile: ["React Native", "Native iOS/Android", "Cross-platform", "App Store Ready"],
+    cloud: ["AWS/Azure/GCP Setup", "Docker & Kubernetes", "CI/CD Pipelines", "Serverless Architecture"],
+    ai: ["Custom AI Models", "Data Analytics", "Chatbot Development", "Predictive Analytics"],
+    marketing: ["SEO Optimization", "Social Media Marketing", "Content Strategy", "Analytics & Reporting"],
+    consulting: ["Technology Strategy", "Digital Transformation", "Project Management", "Technical Audits"]
+  };
+
+  // Helper function to get service-specific features
+  const getServiceFeatures = (serviceKey: string) => {
+    return serviceFeatures[serviceKey as keyof typeof serviceFeatures] || [];
+  };
+
   const services = [
     {
+      key: 'web',
       icon: Globe,
       title: t('services.items.web.title'),
       description: t('services.items.web.description'),
-      features: ["React/Next.js", "Responsive Design", "SEO Optimized", "Performance Focused"],
       color: "from-blue-500 to-cyan-500"
     },
     {
+      key: 'mobile',
       icon: Smartphone,
       title: t('services.items.mobile.title'),
       description: t('services.items.mobile.description'),
-      features: ["React Native", "Native iOS/Android", "Cross-platform", "App Store Ready"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      icon: Code,
-      title: t('services.items.custom.title'),
-      description: t('services.items.custom.description'),
-      features: ["Custom Architecture", "Scalable Solutions", "API Development", "Database Design"],
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: Database,
-      title: t('services.items.backend.title'),
-      description: t('services.items.backend.description'),
-      features: ["Node.js/Python", "RESTful APIs", "Database Design", "Cloud Integration"],
+      key: 'cloud',
+      icon: Cloud,
+      title: t('services.items.cloud.title'),
+      description: t('services.items.cloud.description'),
       color: "from-orange-500 to-red-500"
     },
     {
-      icon: Palette,
-      title: t('services.items.uiux.title'),
-      description: t('services.items.uiux.description'),
-      features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
+      key: 'ai',
+      icon: Brain,
+      title: t('services.items.ai.title'),
+      description: t('services.items.ai.description'),
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      key: 'marketing',
+      icon: TrendingUp,
+      title: t('services.items.marketing.title'),
+      description: t('services.items.marketing.description'),
       color: "from-indigo-500 to-purple-500"
     },
     {
-      icon: Shield,
-      title: t('services.items.devops.title'),
-      description: t('services.items.devops.description'),
-      features: ["AWS/Azure/GCP", "CI/CD Pipelines", "Monitoring", "Security"],
+      key: 'consulting',
+      icon: Lightbulb,
+      title: t('services.items.consulting.title'),
+      description: t('services.items.consulting.description'),
       color: "from-teal-500 to-blue-500"
     }
   ];
@@ -88,8 +104,7 @@ export default function Services() {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div
@@ -100,8 +115,7 @@ export default function Services() {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -169,7 +183,7 @@ export default function Services() {
 
                 {/* Service Features */}
                 <div className="space-y-2 mb-6">
-                  {service.features.map((feature, featureIndex) => (
+                  {getServiceFeatures(service.key).map((feature: string, featureIndex: number) => (
                     <div key={featureIndex} className="flex items-center gap-2">
                       <div className={`w-2 h-2 bg-gradient-to-r ${service.color} rounded-full`} />
                       <span className="text-sm text-foreground/80">{feature}</span>
@@ -179,6 +193,8 @@ export default function Services() {
 
                                  {/* Learn More Button */}
                  <Button
+                   as={Link}
+                   href="/services"
                    variant="ghost"
                    className="text-primary hover:text-primary/80 px-4 py-2 h-auto font-medium group-hover:translate-x-2 transition-transform duration-300 rounded-lg"
                  >
@@ -209,6 +225,8 @@ export default function Services() {
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              as="a"
+              href="/contact"
               className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
               size="lg"
             >
@@ -217,6 +235,8 @@ export default function Services() {
             </Button>
             
             <Button 
+              as="a"
+              href="/products"
               variant="bordered" 
               className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
               size="lg"

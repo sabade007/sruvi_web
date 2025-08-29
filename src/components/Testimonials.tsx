@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Button } from "@heroui/react";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
@@ -66,7 +66,7 @@ export default function Testimonials() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: easeOut
+
       }
     }
   };
@@ -119,8 +119,7 @@ export default function Testimonials() {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div
@@ -131,8 +130,7 @@ export default function Testimonials() {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -307,6 +305,8 @@ export default function Testimonials() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
+                as="a"
+                href="/contact"
                 className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
                 size="lg"
               >
@@ -314,6 +314,8 @@ export default function Testimonials() {
                 <ChevronRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
+                as="a"
+                href="tel:+919731171611"
                 variant="bordered" 
                 className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
                 size="lg"

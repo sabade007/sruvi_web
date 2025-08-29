@@ -1,16 +1,17 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/react";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { useEffect, useState } from 'react';
 import Logoicon from '@/assets/logoiconsvg.svg';
 
 export default function Header() {
-  const t = useTranslations('header');
   const navigation = useTranslations('navigation');
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,29 +59,31 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
-        {menuItems.map((item) => (
-          <NavbarItem key={item.key}>
-            <Link 
-              href={item.href}
-              className="text-foreground/80 hover:text-primary transition-all duration-200 relative group"
-            >
-              {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-200 group-hover:w-full"></span>
-            </Link>
-          </NavbarItem>
-        ))}
+        {menuItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <NavbarItem key={item.key}>
+              <Link 
+                href={item.href}
+                className={`transition-all duration-200 relative group ${
+                  isActive 
+                    ? 'text-primary font-semibold' 
+                    : 'text-foreground/80 hover:text-primary'
+                }`}
+              >
+                {item.label}
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-200 ${
+                  isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
+              </Link>
+            </NavbarItem>
+          );
+        })}
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button 
-            as={Link} 
-            href="/contact" 
-            className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-            size="sm"
-          >
-            {t('contactButton')}
-          </Button>
+          <LanguageSwitcher />
         </NavbarItem>
         <NavbarItem>
           <ThemeToggle />
@@ -88,16 +91,23 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarMenu className="bg-background/95 backdrop-blur-xl">
-        {menuItems.map((item) => (
-          <NavbarMenuItem key={item.key}>
-            <Link 
-              href={item.href}
-              className="w-full text-foreground/80 hover:text-primary transition-colors"
-            >
-              {item.label}
-            </Link>
-          </NavbarMenuItem>
-                 ))}
+        {menuItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <NavbarMenuItem key={item.key}>
+              <Link 
+                href={item.href}
+                className={`w-full transition-colors ${
+                  isActive 
+                    ? 'text-primary font-semibold' 
+                    : 'text-foreground/80 hover:text-primary'
+                }`}
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          );
+        })}
        </NavbarMenu>
             </Navbar>
           </div>

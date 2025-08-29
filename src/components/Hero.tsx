@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, easeInOut, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Button } from "@heroui/react";
 import { ArrowRight, Sparkles, Globe, Smartphone, Code, Zap, Star, Heart, Target, Shield } from "lucide-react";
 import Logo from '@/assets/logo.png';
@@ -26,8 +26,7 @@ export default function Hero() {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.8,
-        ease: easeOut
+        duration: 0.8
       }
     }
   };
@@ -37,8 +36,7 @@ export default function Hero() {
       y: [-10, 10, -10],
       transition: {
         duration: 3,
-        repeat: Infinity,
-        ease: easeInOut
+        repeat: Infinity
       }
     }
   };
@@ -48,8 +46,7 @@ export default function Hero() {
       scale: [1, 1.05, 1],
       transition: {
         duration: 2,
-        repeat: Infinity,
-        ease: easeInOut
+        repeat: Infinity
       }
     }
   };
@@ -94,8 +91,7 @@ export default function Hero() {
            }}
            transition={{
              duration: 8,
-             repeat: Infinity,
-             ease: "easeInOut"
+             repeat: Infinity
            }}
          />
          
@@ -108,8 +104,7 @@ export default function Hero() {
            }}
            transition={{
              duration: 6,
-             repeat: Infinity,
-             ease: "easeInOut"
+             repeat: Infinity
            }}
          />
          <motion.div
@@ -120,8 +115,7 @@ export default function Hero() {
            }}
            transition={{
              duration: 8,
-             repeat: Infinity,
-             ease: "easeInOut"
+             repeat: Infinity
            }}
          />
        </div>
@@ -180,6 +174,8 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
           >
             <Button
+              as="a"
+              href="/contact"
               className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
               size="lg"
             >
@@ -193,6 +189,8 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
           >
             <Button
+              as="a"
+              href="/services"
               variant="bordered"
               className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
               size="lg"
@@ -357,8 +355,7 @@ export default function Hero() {
         }}
         transition={{
           duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut"
+          repeat: Infinity
         }}
       >
         <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
@@ -369,8 +366,7 @@ export default function Hero() {
             }}
             transition={{
               duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
+              repeat: Infinity
             }}
           />
         </div>
