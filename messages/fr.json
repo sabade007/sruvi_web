@@ -7,7 +7,6 @@
     "contact": "Contactez-nous"
   },
   "header": {
-    "contactButton": "Contactez-nous",
     "logoAlt": "Logo Sruvi"
   },
   "hero": {
@@ -26,8 +25,16 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Nos Services - Solutions IT Complètes | Sruvi",
+      "description": "Explorez nos services IT complets incluant le développement web, applications mobiles, solutions cloud, IA et machine learning, marketing digital et conseil IT."
+    },
     "badge": "Nos Services",
     "title": "Solutions Numériques Complètes",
+    "hero": {
+      "title": "Nos Services",
+      "subtitle": "Solutions IT complètes conçues pour transformer votre entreprise et faire avancer l'innovation numérique"
+    },
     "subtitle": "Du concept au déploiement, nous livrons des solutions de pointe qui propulsent votre entreprise",
     "learnMore": "En Savoir Plus",
     "cta": {
@@ -186,7 +193,108 @@
       "secondaryButton": "Voir le Portfolio"
     }
   },
+  "products": {
+    "meta": {
+      "title": "Nos Produits - Solutions Logicielles Innovantes | Sruvi",
+      "description": "Explorez nos produits logiciels innovants incluant la plateforme INDRYVE, solutions SaaS, applications mobiles et logiciel d'entreprise."
+    },
+    "hero": {
+      "title": "Nos Produits",
+      "subtitle": "Solutions logicielles innovantes et produits numériques conçus pour résoudre des problèmes du monde réel"
+    },
+    "featured": {
+      "badge": "Produit Vedette",
+      "title": "Plateforme INDRYVE",
+      "subtitle": "Une plateforme de gestion de fichiers de niveau entreprise alimentée par l'intelligence artificielle. Construite pour les entreprises modernes qui ont besoin d'une gestion de documents sécurisée, évolutive et intelligente.",
+      "features": [
+        "Organisation de fichiers alimentée par l'IA",
+        "Sécurité de niveau entreprise",
+        "Infrastructure cloud évolutive",
+        "Outils de collaboration avancés"
+      ],
+      "requestDemo": "Demander une Démo",
+      "learnMore": "En Savoir Plus"
+    },
+    "categories": {
+      "title": "Catégories de Produits",
+      "subtitle": "Explorez notre gamme de produits innovants conçus pour différents besoins commerciaux",
+      "saas": {
+        "title": "Solutions SaaS",
+        "description": "Solutions logicielles basées sur le cloud qui évoluent avec les besoins de votre entreprise.",
+        "features": [
+          "Outils de Gestion d'Entreprise",
+          "Gestion de la Relation Client",
+          "Plateformes de Gestion de Projet",
+          "Outils d'Analyse et de Rapports"
+        ]
+      },
+      "mobile": {
+        "title": "Applications Mobiles",
+        "description": "Applications mobiles natives et multiplateformes pour iOS et Android.",
+        "features": [
+          "Applications de Consommation",
+          "Applications d'Entreprise",
+          "Applications Mobiles E-commerce",
+          "Applications d'Utilité et de Productivité"
+        ]
+      },
+      "enterprise": {
+        "title": "Logiciel d'Entreprise",
+        "description": "Solutions d'entreprise personnalisées construites pour de grandes organisations.",
+        "features": [
+          "Systèmes ERP Personnalisés",
+          "Automatisation des Flux de Travail",
+          "Plateformes de Gestion de Données",
+          "Solutions d'Intégration"
+        ]
+      }
+    },
+    "techStack": {
+      "title": "Construit avec des Technologies Modernes",
+      "subtitle": "Nos produits sont construits en utilisant des technologies de pointe pour les performances, la sécurité et l'évolutivité"
+    },
+    "cta": {
+      "title": "Intéressé par Nos Produits ?",
+      "subtitle": "Contactez-nous pour en savoir plus sur nos produits et comment ils peuvent bénéficier à votre entreprise.",
+      "scheduleDemo": "Programmer une Démo",
+      "contactSales": "Contacter les Ventes"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Notre Blog - Idées Technologiques et Tutoriels | Sruvi",
+      "description": "Explorez nos dernières idées, tutoriels et leadership d'opinion sur la technologie, le développement et l'innovation numérique."
+    },
+    "hero": {
+      "title": "Notre Blog",
+      "subtitle": "Idées, tutoriels et leadership d'opinion sur la technologie, le développement et l'innovation numérique"
+    },
+    "categories": {
+      "all": "Tous",
+      "technology": "Technologie",
+      "development": "Développement",
+      "cloud": "Cloud",
+      "mobile": "Mobile",
+      "security": "Sécurité",
+      "strategy": "Stratégie"
+    },
+    "newsletter": {
+      "title": "Restez Informé",
+      "subtitle": "Abonnez-vous à notre newsletter pour les dernières idées et mises à jour",
+      "placeholder": "Entrez votre email",
+      "subscribe": "S'abonner"
+    },
+    "readMore": "Lire Plus",
+    "publishedOn": "Publié le",
+    "readTime": "min de lecture",
+    "noPosts": "Aucun article de blog trouvé",
+    "loading": "Chargement des articles de blog..."
+  },
   "contact": {
+    "meta": {
+      "title": "Contact - Commençons une conversation | Sruvi",
+      "description": "Contactez Sruvi pour vos projets IT. Nous sommes prêts à transformer vos idées en réalité."
+    },
     "badge": "Contactez-nous",
     "title": "Commençons une Conversation",
     "subtitle": "Prêt à transformer vos idées en réalité ? Contactez-nous et discutons de la façon dont nous pouvons vous aider à concrétiser votre vision.",
@@ -201,6 +309,14 @@
       "companyPlaceholder": "Entrez le nom de votre entreprise",
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de votre projet...",
+      "projectName": "Nom du Projet",
+      "projectNamePlaceholder": "Entrez le nom de votre projet",
+      "projectBudget": "Budget du Projet",
+      "projectBudgetPlaceholder": "Sélectionnez votre budget",
+      "projectTimeline": "Échéancier",
+      "projectTimelinePlaceholder": "Sélectionnez votre échéancier",
+      "projectType": "Type de Projet",
+      "projectTypePlaceholder": "Sélectionnez le type de projet",
       "submit": "Envoyer le Message"
     },
     "info": {
@@ -240,6 +356,22 @@
       "subtitle": "Discutons de votre projet et explorons comment nous pouvons vous aider à atteindre vos objectifs.",
       "primaryButton": "Programmer un Appel",
       "secondaryButton": "Voir Notre Travail"
+    },
+    "budgetOptions": {
+      "under10k": "Moins de 10.000 €",
+      "10k25k": "10.000 € - 25.000 €",
+      "25k50k": "25.000 € - 50.000 €",
+      "50k100k": "50.000 € - 100.000 €",
+      "over100k": "Plus de 100.000 €"
+    },
+    "timelineOptions": {
+      "3months": "3 Mois",
+      "6months": "6 Mois",
+      "urgent": "Urgent"
+    },
+    "typeOptions": {
+      "new": "Nouveau Projet",
+      "modification": "Modification de Projet"
     }
   },
   "footer": {

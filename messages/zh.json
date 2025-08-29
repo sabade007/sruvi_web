@@ -7,7 +7,6 @@
     "contact": "联系我们"
   },
   "header": {
-    "contactButton": "联系我们",
     "logoAlt": "Sruvi 标志"
   },
   "hero": {
@@ -26,8 +25,16 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "我们的服务 - 全面IT解决方案 | Sruvi",
+      "description": "探索我们全面的IT服务，包括网络开发、移动应用、云解决方案、AI、机器学习、数字营销、IT咨询等。"
+    },
     "badge": "我们的服务",
     "title": "全面的数字解决方案",
+    "hero": {
+      "title": "我们的服务",
+      "subtitle": "专为改变您的业务和推进数字化转型而设计的全面IT解决方案"
+    },
     "subtitle": "从概念到部署，我们提供推动您业务发展的尖端解决方案",
     "learnMore": "了解更多",
     "cta": {
@@ -68,6 +75,98 @@
         "features": ["CI/CD管道", "云迁移", "监控", "自动化"]
       }
     }
+  },
+  "products": {
+    "meta": {
+      "title": "产品 - Sruvi",
+      "description": "发现Sruvi的创新产品。从企业级解决方案到云平台。"
+    },
+    "hero": {
+      "title": "我们的产品",
+      "subtitle": "为业务赋能的创新平台和解决方案"
+    },
+    "featured": {
+      "title": "特色平台",
+      "subtitle": "我们的旗舰产品",
+      "name": "INDRYVE",
+      "description": "全面的企业文件管理和协作平台",
+      "features": [
+        "文件管理",
+        "团队协作",
+        "企业安全",
+        "高性能",
+        "AI文件管理"
+      ],
+      "requestDemo": "安排演示",
+      "learnMore": "了解更多"
+    },
+    "categories": {
+      "title": "产品类别",
+      "subtitle": "适合您业务需求的解决方案",
+      "enterprise": {
+        "title": "企业解决方案",
+        "description": "大型组织的可扩展平台"
+      },
+      "cloud": {
+        "title": "云平台",
+        "description": "云原生解决方案"
+      },
+      "mobile": {
+        "title": "移动应用",
+        "description": "跨平台移动解决方案"
+      },
+      "analytics": {
+        "title": "数据分析",
+        "description": "商业智能解决方案"
+      }
+    },
+    "techStack": {
+      "title": "技术栈",
+      "subtitle": "用于构建我们产品的技术",
+      "frontend": "React, Vue.js, Angular",
+      "backend": "Node.js, Python, Java",
+      "database": "PostgreSQL, MongoDB, Redis",
+      "cloud": "AWS, Azure, Google Cloud",
+      "mobile": "React Native, Flutter",
+      "ai": "TensorFlow, PyTorch, OpenAI"
+    },
+    "cta": {
+      "title": "准备找到适合您业务需求的解决方案？",
+      "subtitle": "让我们讨论我们的产品如何帮助您实现业务目标",
+      "primaryButton": "安排演示",
+      "secondaryButton": "联系销售"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "博客 - Sruvi",
+      "description": "发现技术洞察、行业趋势、数字化转型建议等。"
+    },
+    "hero": {
+      "title": "我们的博客",
+      "subtitle": "技术洞察和行业趋势"
+    },
+    "categories": {
+      "all": "全部",
+      "technology": "技术",
+      "business": "商业",
+      "development": "开发",
+      "design": "设计",
+      "ai": "人工智能"
+    },
+    "newsletter": {
+      "title": "保持最新状态",
+      "subtitle": "订阅我们的新闻通讯，获取最新洞察、项目更新和技术趋势",
+      "placeholder": "输入您的邮箱",
+      "button": "订阅",
+      "success": "成功订阅！",
+      "error": "发生错误。请重试。"
+    },
+    "readMore": "阅读更多",
+    "publishedOn": "发布于",
+    "readTime": "阅读时间",
+    "noPosts": "暂无文章",
+    "loading": "正在加载文章..."
   },
   "about": {
     "badge": "关于我们",
@@ -187,6 +286,10 @@
     }
   },
   "contact": {
+    "meta": {
+      "title": "联系我们 - Sruvi",
+      "description": "联系我们讨论您的项目。我们的团队将帮助您将想法转化为现实。"
+    },
     "badge": "联系我们",
     "title": "让我们开始对话",
     "subtitle": "准备将您的想法转化为现实？联系我们，讨论我们如何帮助您实现愿景。",
@@ -199,9 +302,33 @@
       "emailPlaceholder": "输入您的电子邮件",
       "company": "公司",
       "companyPlaceholder": "输入您的公司名称",
+      "projectName": "项目名称",
+      "projectNamePlaceholder": "输入您的项目名称",
+      "projectBudget": "项目预算",
+      "projectBudgetPlaceholder": "选择您的预算",
+      "projectTimeline": "时间线",
+      "projectTimelinePlaceholder": "选择您的时间线",
+      "projectType": "项目类型",
+      "projectTypePlaceholder": "选择项目类型",
       "message": "消息",
       "messagePlaceholder": "告诉我们您的项目...",
       "submit": "发送消息"
+    },
+    "budgetOptions": {
+      "under10k": "₹10,000以下",
+      "10k25k": "₹10,000 - ₹25,000",
+      "25k50k": "₹25,000 - ₹50,000",
+      "50k100k": "₹50,000 - ₹1,00,000",
+      "above100k": "₹1,00,000以上"
+    },
+    "timelineOptions": {
+      "3months": "3个月",
+      "6months": "6个月",
+      "urgent": "紧急"
+    },
+    "typeOptions": {
+      "new": "新项目",
+      "modification": "现有项目修改"
     },
     "info": {
       "title": "联系信息",

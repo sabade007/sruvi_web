@@ -5,8 +5,8 @@ import Header from '@/components/Header';
 import Breadcrumb from '@/components/Breadcrumb';
 import Footer from '@/components/Footer';
 import { Button } from "@heroui/react";
-import { ArrowRight, FileText, Zap, Building, Smartphone, Database } from "lucide-react";
-import { Link } from '@/i18n/navigation';
+import { Zap, Building, Smartphone } from "lucide-react";
+import files from '@/assets/files.png';
 
 export default function ProductsPage() {
   const t = useTranslations('products');
@@ -16,8 +16,8 @@ export default function ProductsPage() {
       <Header />
       <Breadcrumb />
       <div className="pt-20">
-        {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-background to-muted/20">
+                 {/* Hero Section */}
+         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
@@ -79,35 +79,26 @@ export default function ProductsPage() {
                 </div>
                 
                 <div className="relative">
-                  {/* INDRYVE Image Space */}
-                  <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 h-80 flex items-center justify-center relative overflow-hidden">
-                    {/* Placeholder for INDRYVE Image */}
-                    <div className="text-center relative z-10">
-                      <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
-                        <FileText className="w-16 h-16 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold mb-2 text-foreground">INDRYVE</h3>
-                      <p className="text-foreground/60">Enterprise File Management</p>
-                      <p className="text-sm text-foreground/50 mt-2">AI-Powered Platform</p>
-                    </div>
+                                     {/* INDRYVE Image with 3D effect */}
+                   <div className="relative group overflow-hidden rounded-2xl">
+                                         <img 
+                       src={files.src} 
+                       alt="INDRYVE Platform" 
+                       className="w-full h-80 object-cover rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl" 
+                       style={{
+                         boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)',
+                         filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))',
+                         objectPosition: '0% 0%',
+                         transform: 'scale(1.4)',
+                         transformOrigin: 'top left'
+                       }}
+                     />
                     
-                    {/* Decorative Elements */}
-                    <div className="absolute top-4 right-4 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
-                    <div className="absolute bottom-4 left-4 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
                   </div>
                   
                   {/* AI Powered Badge */}
-                  <div className="absolute -top-4 -right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                  <div className="absolute -top-4 -right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg z-10">
                     AI Powered
-                  </div>
-                  
-                  {/* Image Upload Hint */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black/20 rounded-2xl">
-                    <div className="text-center text-white">
-                      <FileText className="w-8 h-8 mx-auto mb-2" />
-                      <p className="text-sm">Click to upload INDRYVE image</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -115,8 +106,8 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Product Categories */}
-        <section className="py-20 bg-muted/30">
+                 {/* Product Categories */}
+         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -179,8 +170,8 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Technology Stack */}
-        <section className="py-20">
+                 {/* Technology Stack */}
+         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -211,8 +202,8 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10">
+                 {/* CTA Section */}
+         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {t('cta.title')}

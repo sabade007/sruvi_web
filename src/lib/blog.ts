@@ -1,5 +1,5 @@
 import { db } from './firebase';
-import { collection, addDoc, getDocs, getDoc, doc, Timestamp } from 'firebase/firestore';
+import { collection, addDoc, getDocs, getDoc, doc, Timestamp, query, where } from 'firebase/firestore';
 
 // Blog post interface
 export interface BlogPost {

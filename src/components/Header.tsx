@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/react";
 import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
+// import LanguageSwitcher from "./LanguageSwitcher";
 import { useEffect, useState } from 'react';
 import Logoicon from '@/assets/logoiconsvg.svg';
 
@@ -82,9 +82,9 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem>
+        {/* <NavbarItem>
           <LanguageSwitcher />
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <ThemeToggle />
         </NavbarItem>

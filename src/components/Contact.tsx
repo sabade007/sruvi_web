@@ -157,7 +157,7 @@ export default function Contact() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4">
+      <div className="relative z-10 max-w-3xl mx-auto px-4">
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
@@ -286,12 +286,12 @@ export default function Contact() {
                      popoverContent: "bg-background border-divider"
                    }}
                  >
-                   <SelectItem key="under10k" value="under10k">{t('contact.form.budgetOptions.under10k')}</SelectItem>
-                   <SelectItem key="10k25k" value="10k25k">{t('contact.form.budgetOptions.10k25k')}</SelectItem>
-                   <SelectItem key="25k50k" value="25k50k">{t('contact.form.budgetOptions.25k50k')}</SelectItem>
-                   <SelectItem key="50k100k" value="50k100k">{t('contact.form.budgetOptions.50k100k')}</SelectItem>
-                   <SelectItem key="over100k" value="over100k">{t('contact.form.budgetOptions.over100k')}</SelectItem>
-                   <SelectItem key="discuss" value="discuss">{t('contact.form.budgetOptions.discuss')}</SelectItem>
+                   <SelectItem key="under10k">{t('contact.form.budgetOptions.under10k')}</SelectItem>
+                   <SelectItem key="10k25k">{t('contact.form.budgetOptions.10k25k')}</SelectItem>
+                   <SelectItem key="25k50k">{t('contact.form.budgetOptions.25k50k')}</SelectItem>
+                   <SelectItem key="50k100k">{t('contact.form.budgetOptions.50k100k')}</SelectItem>
+                   <SelectItem key="over100k">{t('contact.form.budgetOptions.over100k')}</SelectItem>
+                   <SelectItem key="discuss">{t('contact.form.budgetOptions.discuss')}</SelectItem>
                  </Select>
 
                  <Select
@@ -310,11 +310,11 @@ export default function Contact() {
                      popoverContent: "bg-background border-divider"
                    }}
                  >
-                   <SelectItem key="urgent" value="urgent">{t('contact.form.timelineOptions.urgent')}</SelectItem>
-                   <SelectItem key="3months" value="3months">{t('contact.form.timelineOptions.3months')}</SelectItem>
-                   <SelectItem key="6months" value="6months">{t('contact.form.timelineOptions.6months')}</SelectItem>
-                   <SelectItem key="flexible" value="flexible">{t('contact.form.timelineOptions.flexible')}</SelectItem>
-                   <SelectItem key="discuss" value="discuss">{t('contact.form.timelineOptions.discuss')}</SelectItem>
+                   <SelectItem key="urgent">{t('contact.form.timelineOptions.urgent')}</SelectItem>
+                   <SelectItem key="3months">{t('contact.form.timelineOptions.3months')}</SelectItem>
+                   <SelectItem key="6months">{t('contact.form.timelineOptions.6months')}</SelectItem>
+                   <SelectItem key="flexible">{t('contact.form.timelineOptions.flexible')}</SelectItem>
+                   <SelectItem key="discuss">{t('contact.form.timelineOptions.discuss')}</SelectItem>
                  </Select>
                </div>
 
@@ -334,11 +334,11 @@ export default function Contact() {
                    popoverContent: "bg-background border-divider"
                  }}
                >
-                 <SelectItem key="new" value="new">{t('contact.form.typeOptions.new')}</SelectItem>
-                 <SelectItem key="modification" value="modification">{t('contact.form.typeOptions.modification')}</SelectItem>
-                 <SelectItem key="maintenance" value="maintenance">{t('contact.form.typeOptions.maintenance')}</SelectItem>
-                 <SelectItem key="consulting" value="consulting">{t('contact.form.typeOptions.consulting')}</SelectItem>
-                 <SelectItem key="other" value="other">{t('contact.form.typeOptions.other')}</SelectItem>
+                 <SelectItem key="new">{t('contact.form.typeOptions.new')}</SelectItem>
+                 <SelectItem key="modification">{t('contact.form.typeOptions.modification')}</SelectItem>
+                 <SelectItem key="maintenance">{t('contact.form.typeOptions.maintenance')}</SelectItem>
+                 <SelectItem key="consulting">{t('contact.form.typeOptions.consulting')}</SelectItem>
+                 <SelectItem key="other">{t('contact.form.typeOptions.other')}</SelectItem>
                </Select>
 
                <Textarea

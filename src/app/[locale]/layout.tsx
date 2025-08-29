@@ -30,7 +30,7 @@ type Props = {
 export default async function LocaleLayout({children, params}: Props) {
   // Ensure that the incoming `locale` is valid
   const {locale} = await params;
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale as typeof locales[number])) {
     notFound();
   }
 

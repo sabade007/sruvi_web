@@ -25,8 +25,16 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Unsere Dienstleistungen - Umfassende IT-Lösungen | Sruvi",
+      "description": "Entdecken Sie unsere umfassenden IT-Dienstleistungen einschließlich Webentwicklung, Mobile Apps, Cloud-Lösungen, KI & Machine Learning, Digital Marketing und IT-Beratung."
+    },
     "badge": "Unsere Dienstleistungen",
     "title": "Umfassende Digitale Lösungen",
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende IT-Lösungen, die darauf ausgerichtet sind, Ihr Unternehmen zu transformieren und digitale Innovation voranzutreiben"
+    },
     "subtitle": "Vom Konzept bis zur Bereitstellung liefern wir zukunftsweisende Lösungen, die Ihr Unternehmen vorantreiben",
     "learnMore": "Mehr Erfahren",
     "cta": {
@@ -185,7 +193,108 @@
       "secondaryButton": "Portfolio Ansehen"
     }
   },
+  "products": {
+    "meta": {
+      "title": "Unsere Produkte - Innovative Software-Lösungen | Sruvi",
+      "description": "Entdecken Sie unsere innovativen Software-Produkte einschließlich INDRYVE-Plattform, SaaS-Lösungen, Mobile Apps und Enterprise-Software."
+    },
+    "hero": {
+      "title": "Unsere Produkte",
+      "subtitle": "Innovative Software-Lösungen und digitale Produkte, die entwickelt wurden, um reale Probleme zu lösen"
+    },
+    "featured": {
+      "badge": "Empfohlenes Produkt",
+      "title": "INDRYVE-Plattform",
+      "subtitle": "Eine unternehmensreife Dateiverwaltungsplattform, die von künstlicher Intelligenz angetrieben wird. Entwickelt für moderne Unternehmen, die sichere, skalierbare und intelligente Dokumentenverwaltung benötigen.",
+      "features": [
+        "KI-gestützte Dateiorganisation",
+        "Unternehmensreife Sicherheit",
+        "Skalierbare Cloud-Infrastruktur",
+        "Erweiterte Kollaborationstools"
+      ],
+      "requestDemo": "Demo Anfordern",
+      "learnMore": "Mehr Erfahren"
+    },
+    "categories": {
+      "title": "Produktkategorien",
+      "subtitle": "Entdecken Sie unsere Palette innovativer Produkte, die für verschiedene Geschäftsanforderungen entwickelt wurden",
+      "saas": {
+        "title": "SaaS-Lösungen",
+        "description": "Cloud-basierte Software-Lösungen, die mit Ihren Geschäftsanforderungen skalieren.",
+        "features": [
+          "Geschäftsmanagement-Tools",
+          "Kundenbeziehungsmanagement",
+          "Projektmanagement-Plattformen",
+          "Analyse- und Berichtstools"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Anwendungen",
+        "description": "Native und Cross-Platform Mobile Apps für iOS und Android.",
+        "features": [
+          "Consumer Apps",
+          "Geschäftsanwendungen",
+          "E-Commerce Mobile Apps",
+          "Utility- und Produktivitäts-Apps"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise-Software",
+        "description": "Maßgeschneiderte Enterprise-Lösungen für große Organisationen.",
+        "features": [
+          "Maßgeschneiderte ERP-Systeme",
+          "Workflow-Automatisierung",
+          "Datenmanagement-Plattformen",
+          "Integrationslösungen"
+        ]
+      }
+    },
+    "techStack": {
+      "title": "Entwickelt mit modernen Technologien",
+      "subtitle": "Unsere Produkte werden mit modernsten Technologien für Leistung, Sicherheit und Skalierbarkeit entwickelt"
+    },
+    "cta": {
+      "title": "Interessiert an unseren Produkten?",
+      "subtitle": "Kontaktieren Sie uns, um mehr über unsere Produkte und deren Nutzen für Ihr Unternehmen zu erfahren.",
+      "scheduleDemo": "Demo Planen",
+      "contactSales": "Vertrieb Kontaktieren"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Unser Blog - Technologie-Einblicke & Tutorials | Sruvi",
+      "description": "Entdecken Sie unsere neuesten Einblicke, Tutorials und Thought Leadership zu Technologie, Entwicklung und digitaler Innovation."
+    },
+    "hero": {
+      "title": "Unser Blog",
+      "subtitle": "Einblicke, Tutorials und Thought Leadership zu Technologie, Entwicklung und digitaler Innovation"
+    },
+    "categories": {
+      "all": "Alle",
+      "technology": "Technologie",
+      "development": "Entwicklung",
+      "cloud": "Cloud",
+      "mobile": "Mobile",
+      "security": "Sicherheit",
+      "strategy": "Strategie"
+    },
+    "newsletter": {
+      "title": "Aktuell Bleiben",
+      "subtitle": "Abonnieren Sie unseren Newsletter für die neuesten Einblicke und Updates",
+      "placeholder": "Ihre E-Mail eingeben",
+      "subscribe": "Abonnieren"
+    },
+    "readMore": "Weiterlesen",
+    "publishedOn": "Veröffentlicht am",
+    "readTime": "Min. Lesezeit",
+    "noPosts": "Keine Blog-Beiträge gefunden",
+    "loading": "Blog-Beiträge werden geladen..."
+  },
   "contact": {
+    "meta": {
+      "title": "Kontakt - Lassen Sie uns ein Gespräch beginnen | Sruvi",
+      "description": "Kontaktieren Sie Sruvi für Ihre IT-Projekte. Wir sind bereit, Ihre Ideen in Realität zu verwandeln."
+    },
     "badge": "Kontakt",
     "title": "Lassen Sie Uns Ein Gespräch Beginnen",
     "subtitle": "Bereit, Ihre Ideen in Realität zu verwandeln? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Vision zum Leben zu erwecken.",
@@ -200,6 +309,14 @@
       "companyPlaceholder": "Geben Sie den Namen Ihres Unternehmens ein",
       "message": "Nachricht",
       "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "projectName": "Projektname",
+      "projectNamePlaceholder": "Geben Sie den Namen Ihres Projekts ein",
+      "projectBudget": "Projektbudget",
+      "projectBudgetPlaceholder": "Wählen Sie Ihr Budget",
+      "projectTimeline": "Zeitplan",
+      "projectTimelinePlaceholder": "Wählen Sie Ihren Zeitplan",
+      "projectType": "Projekttyp",
+      "projectTypePlaceholder": "Wählen Sie den Projekttyp",
       "submit": "Nachricht Senden"
     },
     "info": {
@@ -239,6 +356,22 @@
       "subtitle": "Lassen Sie uns über Ihr Projekt sprechen und erkunden, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
       "primaryButton": "Anruf Planen",
       "secondaryButton": "Unsere Arbeit Ansehen"
+    },
+    "budgetOptions": {
+      "under10k": "Unter 10.000 €",
+      "10k25k": "10.000 € - 25.000 €",
+      "25k50k": "25.000 € - 50.000 €",
+      "50k100k": "50.000 € - 100.000 €",
+      "over100k": "Über 100.000 €"
+    },
+    "timelineOptions": {
+      "3months": "3 Monate",
+      "6months": "6 Monate",
+      "urgent": "Dringend"
+    },
+    "typeOptions": {
+      "new": "Neues Projekt",
+      "modification": "Projektmodifikation"
     }
   },
   "footer": {

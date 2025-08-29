@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Button } from "@heroui/react";
 import { ArrowRight, ExternalLink, FolderOpen, Users, Shield, Zap, Star, Globe, Database, Lock } from "lucide-react";
+import photos from '@/assets/photos.png';
+import lightlogo from '@/assets/lightlogo.png';
 
 export default function Portfolio() {
   const t = useTranslations();
@@ -144,23 +146,20 @@ export default function Portfolio() {
             {/* Left Column - Project Image */}
             <motion.div variants={itemVariants} className="order-2 lg:order-1">
               <div className="relative">
-                {/* Placeholder for project image */}
-                <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border-2 border-dashed border-primary/30 flex items-center justify-center">
-                  <div className="text-center">
-                    <FolderOpen className="w-16 h-16 text-primary/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground">Project Image</p>
-                    <p className="text-sm text-muted-foreground/70">(Space reserved for Drive project screenshot)</p>
-                  </div>
-                </div>
-                
-                {/* Floating elements */}
-                <motion.div
-                  className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center shadow-2xl"
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                >
-                  <Globe className="w-10 h-10 text-white" />
-                </motion.div>
+                                 {/* Project image with 3D effect */}
+                 <div className="relative group">
+                                       <img 
+                      src={photos.src} 
+                      alt="INDRYVE Platform" 
+                      className="w-full h-96 object-cover object-top rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl" 
+                      style={{
+                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)',
+                        filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
+                      }}
+                    />
+                   {/* Additional 3D shadow overlay */}
+                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-black/20 pointer-events-none"></div>
+                 </div>
               </div>
             </motion.div>
 
@@ -315,10 +314,9 @@ export default function Portfolio() {
             className="flex flex-col items-center gap-6"
           >
             {/* Indryve Logo Placeholder */}
-            <div className="w-48 h-24 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border-2 border-dashed border-primary/30 flex items-center justify-center">
+            <div className="w-48 h-24  rounded-2xl  flex items-center justify-center">
               <div className="text-center">
-                <Star className="w-8 h-8 text-primary/50 mx-auto mb-2" />
-                <p className="text-muted-foreground text-sm">Indryve Logo</p>
+                <img src={lightlogo.src} alt="Indryve" className="w-full  h-full object-cover rounded-2xl" />
               </div>
             </div>
 

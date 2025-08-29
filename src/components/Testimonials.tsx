@@ -209,7 +209,7 @@ export default function Testimonials() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8 italic"
               >
-                "{testimonials[currentIndex].content}"
+                &ldquo;{testimonials[currentIndex].content}&rdquo;
               </motion.p>
 
               {/* Rating */}
