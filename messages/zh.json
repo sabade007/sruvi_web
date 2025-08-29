@@ -1,0 +1,269 @@
+{
+  "navigation": {
+    "home": "首页",
+    "services": "服务",
+    "products": "产品",
+    "blog": "博客",
+    "contact": "联系我们"
+  },
+  "header": {
+    "contactButton": "联系我们",
+    "logoAlt": "Sruvi 标志"
+  },
+  "hero": {
+    "badge": "现代解决方案",
+    "title": "用尖端技术和创新解决方案将想法转化为数字卓越",
+    "subtitle": "我们一次一个项目地构建未来",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多",
+    "features": {
+      "web": "网络开发",
+      "webDesc": "现代、响应式网站",
+      "mobile": "移动应用",
+      "mobileDesc": "原生和跨平台应用",
+      "custom": "定制解决方案",
+      "customDesc": "量身定制的软件解决方案"
+    }
+  },
+  "services": {
+    "badge": "我们的服务",
+    "title": "全面的数字解决方案",
+    "subtitle": "从概念到部署，我们提供推动您业务发展的尖端解决方案",
+    "learnMore": "了解更多",
+    "cta": {
+      "title": "准备转变您的业务？",
+      "subtitle": "让我们讨论如何帮助您实现数字目标",
+      "primaryButton": "开始您的项目",
+      "secondaryButton": "查看我们的作品"
+    },
+    "items": {
+      "web": {
+        "title": "网络开发",
+        "description": "使用最新技术构建的现代、响应式网站和网络应用程序",
+        "features": ["响应式设计", "SEO优化", "性能导向", "现代UI/UX"]
+      },
+      "mobile": {
+        "title": "移动应用",
+        "description": "适用于iOS和Android的原生和跨平台移动应用程序",
+        "features": ["原生性能", "跨平台", "应用商店就绪", "离线支持"]
+      },
+      "custom": {
+        "title": "定制软件",
+        "description": "专门为您的业务需求设计的定制软件解决方案",
+        "features": ["定制逻辑", "可扩展架构", "集成就绪", "24/7支持"]
+      },
+      "backend": {
+        "title": "后端开发",
+        "description": "为您的应用程序提供强大的服务器端解决方案和API",
+        "features": ["RESTful API", "数据库设计", "安全第一", "云就绪"]
+      },
+      "uiux": {
+        "title": "UI/UX设计",
+        "description": "美丽、直观的用户界面，提升用户体验",
+        "features": ["用户研究", "线框图", "原型设计", "设计系统"]
+      },
+      "devops": {
+        "title": "DevOps和云",
+        "description": "优化的部署和云基础设施管理",
+        "features": ["CI/CD管道", "云迁移", "监控", "自动化"]
+      }
+    }
+  },
+  "about": {
+    "badge": "关于我们",
+    "title": "构建您的数字现实",
+    "subtitle": "我们热衷于创造创新解决方案，帮助企业在数字时代蓬勃发展",
+    "story": {
+      "title": "我们的故事",
+      "content": "Sruvi成立于弥合技术与商业成功之间差距的愿景，一直处于数字创新的前沿。我们开始是一个由热情的开发人员和设计师组成的小团队，团结在技术应该赋能企业而不是使其复杂化的信念下。今天，我们已经发展成为一个全面的数字解决方案提供商，为各个行业的客户提供服务，包括尖端的网络和移动应用程序、定制软件解决方案和战略数字咨询。我们的旅程以持续学习、适应新兴技术以及对每个项目交付卓越的不懈承诺为标志。"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "content": "我们的使命是通过推动增长、效率和竞争优势的创新技术解决方案来赋能企业。我们努力不仅仅是服务提供商——我们旨在成为您数字转型之旅中的战略合作伙伴。通过将技术专长与深厚的商业理解相结合，我们创造不仅满足当前需求而且与您未来增长同步扩展的解决方案。我们相信建立基于信任、透明度和相互成功的长期关系。",
+      "primaryButton": "我们的方法",
+      "secondaryButton": "认识我们的团队"
+    },
+    "stats": {
+      "title": "为什么选择Sruvi？",
+      "clients": "30+ 满意客户",
+      "projects": "35+ 完成项目",
+      "experience": "5+ 年经验"
+    },
+    "values": {
+      "title": "我们的核心价值观",
+      "innovation": {
+        "title": "创新",
+        "description": "不断探索新技术和方法"
+      },
+      "quality": {
+        "title": "质量",
+        "description": "在每个项目中交付卓越"
+      },
+      "collaboration": {
+        "title": "协作",
+        "description": "与客户密切合作实现共同目标"
+      },
+      "integrity": {
+        "title": "诚信",
+        "description": "通过诚实和透明的关系建立信任"
+      }
+    },
+    "cta": {
+      "title": "准备开始您的旅程？",
+      "subtitle": "让我们讨论如何将您的想法转化为产生结果的强大数字解决方案。",
+      "primaryButton": "开始您的项目",
+      "secondaryButton": "安排通话"
+    }
+  },
+  "portfolio": {
+    "badge": "特色项目",
+    "title": "INDRYVE平台",
+    "subtitle": "一个全面的企业文件管理和协作平台",
+    "description": "INDRYVE是一个强大的企业级文件管理和协作平台，彻底改变了组织管理数字资产的方式。采用尖端技术和人工智能功能构建，提供无缝的文件组织、团队协作和企业安全性。INDRYVE是Indryve Inc.的财产。",
+    "requestDemo": "请求现场演示",
+    "collaboration": "与Indryve合作",
+    "visitWebsite": "访问网站",
+    "features": {
+      "title": "主要功能",
+      "fileManagement": "文件管理",
+      "teamCollaboration": "团队协作",
+      "enterpriseSecurity": "企业安全",
+      "highPerformance": "高性能",
+      "aiFileManagement": "AI文件管理"
+    },
+    "techStack": {
+      "title": "技术栈",
+      "frontend": "React",
+      "backend": "Java",
+      "database": "PostgreSQL",
+      "storage": "AWS S3/MinIO",
+      "cache": "Redis",
+      "deployment": "Docker/K8s"
+    },
+    "cta": {
+      "title": "准备开始您的项目？",
+      "subtitle": "让我们一起创造一些令人惊叹的东西。联系我们讨论您的下一个项目。",
+      "primaryButton": "开始您的项目",
+      "secondaryButton": "查看更多项目"
+    }
+  },
+  "testimonials": {
+    "badge": "客户评价",
+    "title": "我们的客户怎么说",
+    "subtitle": "听听我们通过创新技术解决方案帮助转型的企业",
+    "viewAll": "查看所有评价",
+    "clients": [
+      {
+        "name": "Aravind",
+        "company": "Surya Tech",
+        "text": "Sruvi将我们过时的网站转变为现代、高性能的平台，显著改善了我们的用户参与度和转化率。"
+      },
+      {
+        "name": "Ragini",
+        "company": "Imos",
+        "text": "Sruvi开发的移动应用超出了我们的期望。团队对细节的关注和用户体验设计非常出色。"
+      },
+      {
+        "name": "Robin",
+        "company": "澳大利亚",
+        "text": "与Sruvi合作对我们业务来说是一个游戏改变者。他们的定制软件解决方案简化了我们的运营，提高了40%的效率。"
+      },
+      {
+        "name": "Nikhil Kashyap",
+        "company": "企业家",
+        "text": "Sruvi在现代网络技术方面的专业知识帮助我们提前启动了创业平台。质量和性能都很出色。"
+      },
+      {
+        "name": "Shalini",
+        "company": "人力资源",
+        "text": "Sruvi团队专业、响应迅速，真正理解业务需求。他们交付了一个完美符合我们要求的解决方案。"
+      }
+    ],
+    "cta": {
+      "title": "准备加入我们的成功故事？",
+      "subtitle": "让我们讨论如何帮助您实现类似的结果",
+      "primaryButton": "开始您的项目",
+      "secondaryButton": "查看作品集"
+    }
+  },
+  "contact": {
+    "badge": "联系我们",
+    "title": "让我们开始对话",
+    "subtitle": "准备将您的想法转化为现实？联系我们，讨论我们如何帮助您实现愿景。",
+    "form": {
+      "title": "给我们发送消息",
+      "subtitle": "填写下面的表格，我们将在24小时内回复您。",
+      "name": "全名",
+      "namePlaceholder": "输入您的全名",
+      "email": "电子邮件地址",
+      "emailPlaceholder": "输入您的电子邮件",
+      "company": "公司",
+      "companyPlaceholder": "输入您的公司名称",
+      "message": "消息",
+      "messagePlaceholder": "告诉我们您的项目...",
+      "submit": "发送消息"
+    },
+    "info": {
+      "title": "联系信息",
+      "subtitle": "通过这些渠道联系我们。",
+      "email": {
+        "title": "给我们发邮件",
+        "value": "hello@incsruvi.com",
+        "description": "随时给我们发邮件"
+      },
+      "phone": {
+        "title": "给我们打电话",
+        "value": "+91 9731171611",
+        "description": "周一至周五上午9点至下午6点"
+      },
+      "address": {
+        "title": "访问我们",
+        "value": "99号，3楼，PoornaPragna Layout Kathriguppe",
+        "description": "BSK第三阶段班加罗尔-560070"
+      }
+    },
+    "social": {
+      "title": "关注我们",
+      "subtitle": "了解我们最新的项目和见解。"
+    },
+    "hours": {
+      "title": "办公时间",
+      "weekdays": "周一 - 周五",
+      "weekdaysTime": "9:00 AM - 6:00 PM",
+      "saturday": "周六",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "周日",
+      "sundayTime": "休息"
+    },
+    "cta": {
+      "title": "准备开始？",
+      "subtitle": "让我们讨论您的项目，探索我们如何帮助您实现目标。",
+      "primaryButton": "安排通话",
+      "secondaryButton": "查看我们的作品"
+    }
+  },
+  "footer": {
+    "description": "用尖端技术和创新解决方案将想法转化为数字卓越。我们一次一个项目地构建未来。",
+    "quickLinks": "快速链接",
+    "services": "我们的服务",
+    "contactInfo": "联系信息",
+    "newsletter": {
+      "title": "保持更新",
+      "subtitle": "订阅我们的通讯，了解最新的见解、项目更新和技术趋势。",
+      "placeholder": "输入您的电子邮件",
+      "button": "订阅"
+    },
+    "copyright": "© 2024 Sruvi。保留所有权利。",
+    "madeWith": "用",
+    "inIndia": "在印度制作",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie政策"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "notFound": "页面未找到",
+    "scrollToTop": "回到顶部"
+  }
+}

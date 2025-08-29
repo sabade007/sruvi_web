@@ -1,0 +1,269 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "products": "Produits",
+    "blog": "Blog",
+    "contact": "Contactez-nous"
+  },
+  "header": {
+    "contactButton": "Contactez-nous",
+    "logoAlt": "Logo Sruvi"
+  },
+  "hero": {
+    "badge": "Solutions Modernes",
+    "title": "Transformer les idées en excellence numérique avec une technologie de pointe et des solutions innovantes",
+    "subtitle": "Nous construisons l'avenir, un projet à la fois",
+    "getStarted": "Commencer",
+    "learnMore": "En Savoir Plus",
+    "features": {
+      "web": "Développement Web",
+      "webDesc": "Sites web modernes et responsifs",
+      "mobile": "Applications Mobiles",
+      "mobileDesc": "Applications natives et multiplateformes",
+      "custom": "Solutions Personnalisées",
+      "customDesc": "Solutions logicielles sur mesure"
+    }
+  },
+  "services": {
+    "badge": "Nos Services",
+    "title": "Solutions Numériques Complètes",
+    "subtitle": "Du concept au déploiement, nous livrons des solutions de pointe qui propulsent votre entreprise",
+    "learnMore": "En Savoir Plus",
+    "cta": {
+      "title": "Prêt à Transformer Votre Entreprise ?",
+      "subtitle": "Discutons de la façon dont nous pouvons vous aider à atteindre vos objectifs numériques",
+      "primaryButton": "Démarrer Votre Projet",
+      "secondaryButton": "Voir Notre Travail"
+    },
+    "items": {
+      "web": {
+        "title": "Développement Web",
+        "description": "Sites web et applications web modernes et responsifs construits avec les dernières technologies",
+        "features": ["Design Responsive", "Optimisé SEO", "Performance Focus", "UI/UX Moderne"]
+      },
+      "mobile": {
+        "title": "Applications Mobiles",
+        "description": "Applications mobiles natives et multiplateformes pour iOS et Android",
+        "features": ["Performance Native", "Multiplateforme", "Prêt App Store", "Support Hors Ligne"]
+      },
+      "custom": {
+        "title": "Logiciel Personnalisé",
+        "description": "Solutions logicielles sur mesure conçues spécifiquement pour les besoins de votre entreprise",
+        "features": ["Logique Personnalisée", "Architecture Évolutive", "Prêt Intégration", "Support 24/7"]
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "description": "Solutions robustes côté serveur et APIs pour vos applications",
+        "features": ["APIs RESTful", "Conception Base de Données", "Sécurité d'Abord", "Prêt Cloud"]
+      },
+      "uiux": {
+        "title": "Design UI/UX",
+        "description": "Interfaces utilisateur belles et intuitives qui améliorent l'expérience utilisateur",
+        "features": ["Recherche Utilisateur", "Wireframing", "Prototypage", "Systèmes Design"]
+      },
+      "devops": {
+        "title": "DevOps et Cloud",
+        "description": "Déploiement optimisé et gestion d'infrastructure cloud",
+        "features": ["Pipelines CI/CD", "Migration Cloud", "Monitoring", "Automatisation"]
+      }
+    }
+  },
+  "about": {
+    "badge": "À Propos",
+    "title": "Construire Votre Réalité Numérique",
+    "subtitle": "Nous sommes passionnés par la création de solutions innovantes qui aident les entreprises à prospérer à l'ère numérique",
+    "story": {
+      "title": "Notre Histoire",
+      "content": "Fondée avec la vision de combler le fossé entre la technologie et le succès commercial, Sruvi a été à l'avant-garde de l'innovation numérique. Nous avons commencé comme une petite équipe de développeurs et designers passionnés, unis par la croyance que la technologie devrait autonomiser les entreprises, pas les compliquer. Aujourd'hui, nous avons grandi pour devenir un fournisseur de solutions numériques complet, servant des clients dans diverses industries avec des applications web et mobiles de pointe, des solutions logicielles personnalisées et des conseils numériques stratégiques. Notre parcours a été marqué par un apprentissage continu, l'adaptation aux technologies émergentes et un engagement inébranlable à livrer l'excellence dans chaque projet que nous entreprenons."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "content": "Notre mission est d'autonomiser les entreprises grâce à des solutions technologiques innovantes qui stimulent la croissance, l'efficacité et l'avantage concurrentiel. Nous nous efforçons d'être plus qu'un fournisseur de services – nous visons à être un partenaire stratégique dans votre voyage de transformation numérique. En combinant l'expertise technique avec une compréhension approfondie des affaires, nous créons des solutions qui répondent non seulement aux besoins actuels mais s'adaptent également à votre croissance future. Nous croyons en la construction de relations à long terme basées sur la confiance, la transparence et le succès mutuel.",
+      "primaryButton": "Notre Approche",
+      "secondaryButton": "Rencontrer Notre Équipe"
+    },
+    "stats": {
+      "title": "Pourquoi Choisir Sruvi ?",
+      "clients": "30+ Clients Satisfaits",
+      "projects": "35+ Projets Terminés",
+      "experience": "5+ Années d'Expérience"
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Explorer constamment de nouvelles technologies et approches"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Livrer l'excellence dans chaque projet que nous entreprenons"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Travailler étroitement avec les clients pour atteindre des objectifs partagés"
+      },
+      "integrity": {
+        "title": "Intégrité",
+        "description": "Construire la confiance grâce à des relations honnêtes et transparentes"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Commencer Votre Voyage ?",
+      "subtitle": "Discutons de la façon dont nous pouvons transformer vos idées en solutions numériques puissantes qui génèrent des résultats.",
+      "primaryButton": "Démarrer Votre Projet",
+      "secondaryButton": "Planifier un Appel"
+    }
+  },
+  "portfolio": {
+    "badge": "Projet Vedette",
+    "title": "Plateforme INDRYVE",
+    "subtitle": "Une plateforme complète de gestion de fichiers d'entreprise et de collaboration",
+    "description": "INDRYVE est une plateforme puissante de gestion de fichiers et de collaboration de niveau entreprise qui révolutionne la façon dont les organisations gèrent leurs actifs numériques. Construite avec une technologie de pointe et des capacités d'intelligence artificielle, elle fournit une organisation de fichiers transparente, une collaboration d'équipe et une sécurité d'entreprise. INDRYVE est la propriété d'Indryve Inc.",
+    "requestDemo": "Demander une Démo en Direct",
+    "collaboration": "En Collaboration Avec Indryve",
+    "visitWebsite": "Visiter le Site Web",
+    "features": {
+      "title": "Fonctionnalités Clés",
+      "fileManagement": "Gestion de Fichiers",
+      "teamCollaboration": "Collaboration d'Équipe",
+      "enterpriseSecurity": "Sécurité d'Entreprise",
+      "highPerformance": "Haute Performance",
+      "aiFileManagement": "Gestion de Fichiers IA"
+    },
+    "techStack": {
+      "title": "Stack Technologique",
+      "frontend": "React",
+      "backend": "Java",
+      "database": "PostgreSQL",
+      "storage": "AWS S3/MinIO",
+      "cache": "Redis",
+      "deployment": "Docker/K8s"
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "subtitle": "Créons quelque chose d'incroyable ensemble. Contactez-nous pour discuter de votre prochain projet.",
+      "primaryButton": "Démarrer Votre Projet",
+      "secondaryButton": "Voir Plus de Projets"
+    }
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Écoutez les entreprises que nous avons aidées à transformer grâce à des solutions technologiques innovantes",
+    "viewAll": "Voir Tous les Témoignages",
+    "clients": [
+      {
+        "name": "Aravind",
+        "company": "Surya Tech",
+        "text": "Sruvi a transformé notre site web obsolète en une plateforme moderne et performante qui a considérablement amélioré notre engagement utilisateur et nos taux de conversion."
+      },
+      {
+        "name": "Ragini",
+        "company": "Imos",
+        "text": "L'application mobile développée par Sruvi a dépassé nos attentes. L'attention aux détails de l'équipe et la conception de l'expérience utilisateur sont exceptionnelles."
+      },
+      {
+        "name": "Robin",
+        "company": "Australie",
+        "text": "Travailler avec Sruvi a été un changement de jeu pour notre entreprise. Leur solution logicielle personnalisée a rationalisé nos opérations et amélioré l'efficacité de 40%."
+      },
+      {
+        "name": "Nikhil Kashyap",
+        "company": "Entrepreneur",
+        "text": "L'expertise de Sruvi dans les technologies web modernes nous a aidés à lancer la plateforme de notre startup en avance sur le calendrier. La qualité et les performances sont exceptionnelles."
+      },
+      {
+        "name": "Shalini",
+        "company": "RH",
+        "text": "L'équipe de Sruvi est professionnelle, réactive et comprend vraiment les besoins commerciaux. Ils ont livré une solution qui s'adapte parfaitement à nos exigences."
+      }
+    ],
+    "cta": {
+      "title": "Prêt à Rejoindre Nos Histoires de Succès ?",
+      "subtitle": "Discutons de la façon dont nous pouvons vous aider à obtenir des résultats similaires",
+      "primaryButton": "Démarrer Votre Projet",
+      "secondaryButton": "Voir le Portfolio"
+    }
+  },
+  "contact": {
+    "badge": "Contactez-nous",
+    "title": "Commençons une Conversation",
+    "subtitle": "Prêt à transformer vos idées en réalité ? Contactez-nous et discutons de la façon dont nous pouvons vous aider à concrétiser votre vision.",
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
+      "name": "Nom Complet",
+      "namePlaceholder": "Entrez votre nom complet",
+      "email": "Adresse Email",
+      "emailPlaceholder": "Entrez votre email",
+      "company": "Entreprise",
+      "companyPlaceholder": "Entrez le nom de votre entreprise",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "subtitle": "Contactez-nous via l'un de ces canaux.",
+      "email": {
+        "title": "Envoyez-nous un Email",
+        "value": "hello@incsruvi.com",
+        "description": "Envoyez-nous un email à tout moment"
+      },
+      "phone": {
+        "title": "Appelez-nous",
+        "value": "+91 9731171611",
+        "description": "Lun-Ven de 9h à 18h"
+      },
+      "address": {
+        "title": "Visitez-nous",
+        "value": "No 99, 3ème étage, PoornaPragna Layout Kathriguppe",
+        "description": "BSK 3ème étape Bengaluru-560070"
+      }
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "subtitle": "Restez à jour avec nos derniers projets et idées."
+    },
+    "hours": {
+      "title": "Heures de Bureau",
+      "weekdays": "Lundi - Vendredi",
+      "weekdaysTime": "9:00 AM - 6:00 PM",
+      "saturday": "Samedi",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Dimanche",
+      "sundayTime": "Fermé"
+    },
+    "cta": {
+      "title": "Prêt à Commencer ?",
+      "subtitle": "Discutons de votre projet et explorons comment nous pouvons vous aider à atteindre vos objectifs.",
+      "primaryButton": "Programmer un Appel",
+      "secondaryButton": "Voir Notre Travail"
+    }
+  },
+  "footer": {
+    "description": "Transformer les idées en excellence numérique avec une technologie de pointe et des solutions innovantes. Nous construisons l'avenir, un projet à la fois.",
+    "quickLinks": "Liens Rapides",
+    "services": "Nos Services",
+    "contactInfo": "Informations de Contact",
+    "newsletter": {
+      "title": "Restez Informé",
+      "subtitle": "Abonnez-vous à notre newsletter pour les dernières idées, mises à jour de projets et tendances technologiques.",
+      "placeholder": "Entrez votre email",
+      "button": "S'abonner"
+    },
+    "copyright": "© 2024 Sruvi. Tous droits réservés.",
+    "madeWith": "Fait avec",
+    "inIndia": "en Inde",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions de Service",
+    "cookies": "Politique des Cookies"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "notFound": "Page non trouvée",
+    "scrollToTop": "Retour en haut"
+  }
+}

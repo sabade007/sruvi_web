@@ -1,0 +1,270 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "products": "Products",
+    "blog": "Blog",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "contactButton": "Contact Us",
+    "logoAlt": "Sruvi Logo"
+  },
+  "hero": {
+    "badge": "Modern Solutions",
+    "title": "Transforming ideas into digital excellence with cutting-edge technology and innovative solutions",
+    "subtitle": "We build the future, one project at a time",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "features": {
+      "web": "Web Development",
+      "webDesc": "Modern, responsive websites",
+      "mobile": "Mobile Apps",
+      "mobileDesc": "Native & cross-platform apps",
+      "custom": "Custom Solutions",
+      "customDesc": "Tailored software solutions"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive Digital Solutions",
+ 
+    "subtitle": "From concept to deployment, we deliver cutting-edge solutions that drive your business forward",
+    "learnMore": "Learn More",
+    "cta": {
+      "title": "Ready to Transform Your Business?",
+      "subtitle": "Let's discuss how we can help you achieve your digital goals",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "View Our Work"
+    },
+    "items": {
+      "web": {
+        "title": "Web Development",
+        "description": "Modern, responsive websites and web applications built with the latest technologies",
+        "features": ["Responsive Design", "SEO Optimized", "Performance Focused", "Modern UI/UX"]
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform mobile applications for iOS and Android",
+        "features": ["Native Performance", "Cross-Platform", "App Store Ready", "Offline Support"]
+      },
+      "custom": {
+        "title": "Custom Software",
+        "description": "Tailored software solutions designed specifically for your business needs",
+        "features": ["Custom Logic", "Scalable Architecture", "Integration Ready", "24/7 Support"]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Robust server-side solutions and APIs for your applications",
+        "features": ["RESTful APIs", "Database Design", "Security First", "Cloud Ready"]
+      },
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Beautiful, intuitive user interfaces that enhance user experience",
+        "features": ["User Research", "Wireframing", "Prototyping", "Design Systems"]
+      },
+      "devops": {
+        "title": "DevOps & Cloud",
+        "description": "Streamlined deployment and cloud infrastructure management",
+        "features": ["CI/CD Pipelines", "Cloud Migration", "Monitoring", "Automation"]
+      }
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Building Your Digital Reality",
+    "subtitle": "We are passionate about creating innovative solutions that help businesses thrive in the digital age",
+    "story": {
+      "title": "Our Story",
+      "content": "Founded with a vision to bridge the gap between technology and business success, Sruvi has been at the forefront of digital innovation. We started as a small team of passionate developers and designers, united by the belief that technology should empower businesses, not complicate them. Today, we've grown into a comprehensive digital solutions provider, serving clients across various industries with cutting-edge web and mobile applications, custom software solutions, and strategic digital consulting. Our journey has been marked by continuous learning, adaptation to emerging technologies, and an unwavering commitment to delivering excellence in every project we undertake."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "Our mission is to empower businesses through innovative technology solutions that drive growth, efficiency, and competitive advantage. We strive to be more than just a service provider – we aim to be a strategic partner in your digital transformation journey. By combining technical expertise with deep business understanding, we create solutions that not only meet current needs but also scale with your future growth. We believe in building long-term relationships based on trust, transparency, and mutual success.",
+      "primaryButton": "Our Approach",
+      "secondaryButton": "Meet Our Team"
+    },
+    "stats": {
+      "title": "Why Choose Sruvi?",
+      "clients": "30+ Happy Clients",
+      "projects": "35+ Projects Completed",
+      "experience": "5+ Years Experience"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Constantly exploring new technologies and approaches"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Delivering excellence in every project we undertake"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working closely with clients to achieve shared goals"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Building trust through honest and transparent relationships"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "subtitle": "Let's discuss how we can transform your ideas into powerful digital solutions that drive results.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule a Call"
+    }
+  },
+  "portfolio": {
+    "badge": "Featured Project",
+    "title": "INDRYVE Platform",
+    "subtitle": "A comprehensive enterprise file management and collaboration platform",
+    "description": "INDRYVE is a powerful enterprise-grade file management and collaboration platform that revolutionizes how organizations handle their digital assets. Built with cutting-edge technology and artificial intelligence capabilities, it provides seamless file organization, team collaboration, and enterprise security. INDRYVE is property of Indryve Inc.",
+    "requestDemo": "Request Live Demo",
+    "collaboration": "In Collaboration With Indryve",
+    "visitWebsite": "Visit Website",
+    "features": {
+      "title": "Key Features",
+      "fileManagement": "File Management",
+      "teamCollaboration": "Team Collaboration",
+      "enterpriseSecurity": "Enterprise Security",
+      "highPerformance": "High Performance",
+      "aiFileManagement": "AI File Management"
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "frontend": "React",
+      "backend": "Java",
+      "database": "PostgreSQL",
+      "storage": "AWS S3/MinIO",
+      "cache": "Redis",
+      "deployment": "Docker/K8s"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's create something amazing together. Get in touch to discuss your next project.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "View More Projects"
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Hear from the businesses we've helped transform through innovative technology solutions",
+    "viewAll": "View All Testimonials",
+    "clients": [
+      {
+        "name": "Aravind",
+        "company": "Surya Tech",
+        "text": "Sruvi transformed our outdated website into a modern, high-performing platform that has significantly improved our user engagement and conversion rates."
+      },
+      {
+        "name": "Ragini",
+        "company": "Imos",
+        "text": "The mobile app developed by Sruvi exceeded our expectations. The team's attention to detail and user experience design is exceptional."
+      },
+      {
+        "name": "Robin",
+        "company": "Australia",
+        "text": "Working with Sruvi has been a game-changer for our business. Their custom software solution streamlined our operations and improved efficiency by 40%."
+      },
+      {
+        "name": "Nikhil Kashyap",
+        "company": "Entrepreneur",
+        "text": "Sruvi's expertise in modern web technologies helped us launch our startup's platform ahead of schedule. The quality and performance are outstanding."
+      },
+      {
+        "name": "Shalini",
+        "company": "HR",
+        "text": "The team at Sruvi is professional, responsive, and truly understands business needs. They delivered a solution that perfectly fits our requirements."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Join Our Success Stories?",
+      "subtitle": "Let's discuss how we can help you achieve similar results",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "View Portfolio"
+    }
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "title": "Let's Start a Conversation",
+    "subtitle": "Ready to transform your ideas into reality? Get in touch with us and let's discuss how we can help bring your vision to life.",
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "company": "Company",
+      "companyPlaceholder": "Enter your company name",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Reach out to us through any of these channels.",
+      "email": {
+        "title": "Email Us",
+        "value": "hello@incsruvi.com",
+        "description": "Email us anytime"
+      },
+      "phone": {
+        "title": "Call Us",
+        "value": "+91 9731171611",
+        "description": "Mon-Fri from 9am to 6pm"
+      },
+      "address": {
+        "title": "Visit Us",
+        "value": "No 99, 3rd floor, PoornaPragna Layout Kathriguppe",
+        "description": "BSK 3rd stage Bengaluru-560070"
+      }
+    },
+    "social": {
+      "title": "Follow Us",
+      "subtitle": "Stay updated with our latest projects and insights."
+    },
+    "hours": {
+      "title": "Office Hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysTime": "9:00 AM - 6:00 PM",
+      "saturday": "Saturday",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Sunday",
+      "sundayTime": "Closed"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Let's discuss your project and explore how we can help you achieve your goals.",
+      "primaryButton": "Schedule a Call",
+      "secondaryButton": "View Our Work"
+    }
+  },
+  "footer": {
+    "description": "Transforming ideas into digital excellence with cutting-edge technology and innovative solutions. We build the future, one project at a time.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactInfo": "Contact Info",
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Subscribe to our newsletter for the latest insights, project updates, and tech trends.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "copyright": "© 2024 Sruvi. All rights reserved.",
+    "madeWith": "Made with",
+    "inIndia": "in India",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": "Page not found",
+    "scrollToTop": "Scroll to top"
+  }
+}

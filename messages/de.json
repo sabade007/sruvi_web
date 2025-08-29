@@ -1,0 +1,269 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "products": "Produkte",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "contactButton": "Kontakt",
+    "logoAlt": "Sruvi Logo"
+  },
+  "hero": {
+    "badge": "Moderne Lösungen",
+    "title": "Ideen in digitale Exzellenz verwandeln mit modernster Technologie und innovativen Lösungen",
+    "subtitle": "Wir bauen die Zukunft, ein Projekt nach dem anderen",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr Erfahren",
+    "features": {
+      "web": "Webentwicklung",
+      "webDesc": "Moderne, responsive Websites",
+      "mobile": "Mobile Apps",
+      "mobileDesc": "Native & Cross-Platform Apps",
+      "custom": "Maßgeschneiderte Lösungen",
+      "customDesc": "Individuelle Softwarelösungen"
+    }
+  },
+  "services": {
+    "badge": "Unsere Dienstleistungen",
+    "title": "Umfassende Digitale Lösungen",
+    "subtitle": "Vom Konzept bis zur Bereitstellung liefern wir zukunftsweisende Lösungen, die Ihr Unternehmen vorantreiben",
+    "learnMore": "Mehr Erfahren",
+    "cta": {
+      "title": "Bereit, Ihr Unternehmen zu Transformieren?",
+      "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen bei der Erreichung Ihrer digitalen Ziele helfen können",
+      "primaryButton": "Ihr Projekt Starten",
+      "secondaryButton": "Unsere Arbeit Ansehen"
+    },
+    "items": {
+      "web": {
+        "title": "Webentwicklung",
+        "description": "Moderne, responsive Websites und Webanwendungen mit neuesten Technologien",
+        "features": ["Responsive Design", "SEO-Optimiert", "Leistungsorientiert", "Moderne UI/UX"]
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "description": "Native und Cross-Platform Mobile Anwendungen für iOS und Android",
+        "features": ["Native Performance", "Cross-Platform", "App Store Ready", "Offline Support"]
+      },
+      "custom": {
+        "title": "Maßgeschneiderte Software",
+        "description": "Individuelle Softwarelösungen speziell für Ihre Geschäftsanforderungen",
+        "features": ["Individuelle Logik", "Skalierbare Architektur", "Integrationsbereit", "24/7 Support"]
+      },
+      "backend": {
+        "title": "Backend-Entwicklung",
+        "description": "Robuste Server-seitige Lösungen und APIs für Ihre Anwendungen",
+        "features": ["RESTful APIs", "Datenbankdesign", "Sicherheit zuerst", "Cloud Ready"]
+      },
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Schöne, intuitive Benutzeroberflächen, die die Benutzererfahrung verbessern",
+        "features": ["Benutzerforschung", "Wireframing", "Prototyping", "Design Systeme"]
+      },
+      "devops": {
+        "title": "DevOps & Cloud",
+        "description": "Optimierte Bereitstellung und Cloud-Infrastrukturmanagement",
+        "features": ["CI/CD Pipelines", "Cloud Migration", "Monitoring", "Automatisierung"]
+      }
+    }
+  },
+  "about": {
+    "badge": "Über Uns",
+    "title": "Ihre Digitale Realität Bauen",
+    "subtitle": "Wir sind leidenschaftlich daran, innovative Lösungen zu schaffen, die Unternehmen im digitalen Zeitalter helfen zu florieren",
+    "story": {
+      "title": "Unsere Geschichte",
+      "content": "Gegründet mit der Vision, die Lücke zwischen Technologie und Geschäftserfolg zu schließen, war Sruvi an der Spitze der digitalen Innovation. Wir begannen als kleines Team leidenschaftlicher Entwickler und Designer, vereint durch den Glauben, dass Technologie Unternehmen befähigen sollte, nicht komplizieren. Heute sind wir zu einem umfassenden Anbieter digitaler Lösungen gewachsen und bedienen Kunden in verschiedenen Branchen mit modernsten Web- und Mobile-Anwendungen, maßgeschneiderten Softwarelösungen und strategischer digitaler Beratung. Unsere Reise war geprägt von kontinuierlichem Lernen, Anpassung an aufkommende Technologien und einem unerschütterlichen Engagement für Exzellenz in jedem Projekt, das wir angehen."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Unsere Mission ist es, Unternehmen durch innovative Technologielösungen zu befähigen, die Wachstum, Effizienz und Wettbewerbsvorteile vorantreiben. Wir streben danach, mehr als nur ein Dienstleister zu sein – wir zielen darauf ab, ein strategischer Partner in Ihrer digitalen Transformationsreise zu sein. Durch die Kombination von technischer Expertise mit tiefem Geschäftsverständnis schaffen wir Lösungen, die nicht nur aktuelle Bedürfnisse erfüllen, sondern auch mit Ihrem zukünftigen Wachstum skalieren. Wir glauben an den Aufbau langfristiger Beziehungen basierend auf Vertrauen, Transparenz und gegenseitigem Erfolg.",
+      "primaryButton": "Unser Ansatz",
+      "secondaryButton": "Unser Team Kennenlernen"
+    },
+    "stats": {
+      "title": "Warum Sruvi Wählen?",
+      "clients": "30+ Zufriedene Kunden",
+      "projects": "35+ Abgeschlossene Projekte",
+      "experience": "5+ Jahre Erfahrung"
+    },
+    "values": {
+      "title": "Unsere Kernwerte",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Ständige Erkundung neuer Technologien und Ansätze"
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Exzellenz in jedem Projekt liefern"
+      },
+      "collaboration": {
+        "title": "Zusammenarbeit",
+        "description": "Eng mit Kunden zusammenarbeiten für gemeinsame Ziele"
+      },
+      "integrity": {
+        "title": "Integrität",
+        "description": "Vertrauen durch ehrliche und transparente Beziehungen aufbauen"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Reise Zu Beginnen?",
+      "subtitle": "Lassen Sie uns besprechen, wie wir Ihre Ideen in leistungsstarke digitale Lösungen verwandeln können, die Ergebnisse liefern.",
+      "primaryButton": "Ihr Projekt Starten",
+      "secondaryButton": "Anruf Planen"
+    }
+  },
+  "portfolio": {
+    "badge": "Ausgewähltes Projekt",
+    "title": "INDRYVE Plattform",
+    "subtitle": "Eine umfassende Unternehmens-Dateiverwaltungs- und Kollaborationsplattform",
+    "description": "INDRYVE ist eine leistungsstarke unternehmensweite Dateiverwaltungs- und Kollaborationsplattform, die revolutioniert, wie Organisationen ihre digitalen Assets verwalten. Gebaut mit modernster Technologie und KI-Fähigkeiten bietet sie nahtlose Dateiorganisation, Team-Kollaboration und Unternehmenssicherheit. INDRYVE ist Eigentum von Indryve Inc.",
+    "requestDemo": "Live-Demo Anfordern",
+    "collaboration": "In Zusammenarbeit mit Indryve",
+    "visitWebsite": "Website Besuchen",
+    "features": {
+      "title": "Hauptfunktionen",
+      "fileManagement": "Dateiverwaltung",
+      "teamCollaboration": "Team-Kollaboration",
+      "enterpriseSecurity": "Unternehmenssicherheit",
+      "highPerformance": "Hohe Leistung",
+      "aiFileManagement": "KI-Dateiverwaltung"
+    },
+    "techStack": {
+      "title": "Technologie-Stack",
+      "frontend": "React",
+      "backend": "Java",
+      "database": "PostgreSQL",
+      "storage": "AWS S3/MinIO",
+      "cache": "Redis",
+      "deployment": "Docker/K8s"
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt Zu Starten?",
+      "subtitle": "Lassen Sie uns etwas Erstaunliches zusammen erstellen. Kontaktieren Sie uns, um Ihr nächstes Projekt zu besprechen.",
+      "primaryButton": "Ihr Projekt Starten",
+      "secondaryButton": "Weitere Projekte Ansehen"
+    }
+  },
+  "testimonials": {
+    "badge": "Kundenstimmen",
+    "title": "Was Unsere Kunden Sagen",
+    "subtitle": "Hören Sie von den Unternehmen, die wir durch innovative Technologielösungen transformiert haben",
+    "viewAll": "Alle Kundenstimmen Ansehen",
+    "clients": [
+      {
+        "name": "Aravind",
+        "company": "Surya Tech",
+        "text": "Sruvi hat unsere veraltete Website in eine moderne, leistungsstarke Plattform verwandelt, die unser Nutzerengagement und unsere Konversionsraten erheblich verbessert hat."
+      },
+      {
+        "name": "Ragini",
+        "company": "Imos",
+        "text": "Die von Sruvi entwickelte Mobile App hat unsere Erwartungen übertroffen. Die Aufmerksamkeit für Details und das UX-Design des Teams ist außergewöhnlich."
+      },
+      {
+        "name": "Robin",
+        "company": "Australien",
+        "text": "Die Zusammenarbeit mit Sruvi war ein Game-Changer für unser Unternehmen. Ihre maßgeschneiderte Softwarelösung hat unsere Abläufe optimiert und die Effizienz um 40% verbessert."
+      },
+      {
+        "name": "Nikhil Kashyap",
+        "company": "Unternehmer",
+        "text": "Sruvis Expertise in modernen Webtechnologien hat uns geholfen, die Plattform unseres Startups vor dem Zeitplan zu starten. Die Qualität und Leistung sind herausragend."
+      },
+      {
+        "name": "Shalini",
+        "company": "HR",
+        "text": "Das Team von Sruvi ist professionell, reaktiv und versteht wirklich Geschäftsanforderungen. Sie haben eine Lösung geliefert, die perfekt zu unseren Anforderungen passt."
+      }
+    ],
+    "cta": {
+      "title": "Bereit, Unsere Erfolgsgeschichten Beizutreten?",
+      "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, ähnliche Ergebnisse zu erzielen",
+      "primaryButton": "Ihr Projekt Starten",
+      "secondaryButton": "Portfolio Ansehen"
+    }
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Lassen Sie Uns Ein Gespräch Beginnen",
+    "subtitle": "Bereit, Ihre Ideen in Realität zu verwandeln? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Vision zum Leben zu erwecken.",
+    "form": {
+      "title": "Senden Sie Uns Eine Nachricht",
+      "subtitle": "Füllen Sie das Formular unten aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Geben Sie den Namen Ihres Unternehmens ein",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "submit": "Nachricht Senden"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "subtitle": "Kontaktieren Sie uns über einen dieser Kanäle.",
+      "email": {
+        "title": "E-Mail Senden",
+        "value": "hello@incsruvi.com",
+        "description": "Senden Sie uns jederzeit eine E-Mail"
+      },
+      "phone": {
+        "title": "Anrufen",
+        "value": "+91 9731171611",
+        "description": "Mo-Fr von 9-18 Uhr"
+      },
+      "address": {
+        "title": "Besuchen Sie Uns",
+        "value": "Nr. 99, 3. Stock, PoornaPragna Layout Kathriguppe",
+        "description": "BSK 3. Stufe Bengaluru-560070"
+      }
+    },
+    "social": {
+      "title": "Folgen Sie Uns",
+      "subtitle": "Bleiben Sie auf dem Laufenden mit unseren neuesten Projekten und Einblicken."
+    },
+    "hours": {
+      "title": "Bürozeiten",
+      "weekdays": "Montag - Freitag",
+      "weekdaysTime": "9:00 AM - 6:00 PM",
+      "saturday": "Samstag",
+      "saturdayTime": "10:00 AM - 4:00 PM",
+      "sunday": "Sonntag",
+      "sundayTime": "Geschlossen"
+    },
+    "cta": {
+      "title": "Bereit Zu Beginnen?",
+      "subtitle": "Lassen Sie uns über Ihr Projekt sprechen und erkunden, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+      "primaryButton": "Anruf Planen",
+      "secondaryButton": "Unsere Arbeit Ansehen"
+    }
+  },
+  "footer": {
+    "description": "Ideen in digitale Exzellenz verwandeln mit modernster Technologie und innovativen Lösungen. Wir bauen die Zukunft, ein Projekt nach dem anderen.",
+    "quickLinks": "Schnelllinks",
+    "services": "Unsere Dienstleistungen",
+    "contactInfo": "Kontaktinformationen",
+    "newsletter": {
+      "title": "Auf Dem Laufenden Bleiben",
+      "subtitle": "Abonnieren Sie unseren Newsletter für die neuesten Einblicke, Projekt-Updates und Technologie-Trends.",
+      "placeholder": "Ihre E-Mail eingeben",
+      "button": "Abonnieren"
+    },
+    "copyright": "© 2024 Sruvi. Alle Rechte vorbehalten.",
+    "madeWith": "Gemacht mit",
+    "inIndia": "in Indien",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "notFound": "Seite nicht gefunden",
+    "scrollToTop": "Nach oben"
+  }
+}
