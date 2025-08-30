@@ -17,9 +17,9 @@
     "learnMore": "Learn More",
     "features": {
       "web": "Web Development",
-      "webDesc": "Modern, responsive websites",
+      "webDesc": "Modern, responsive websites and web applications built with the latest technologies",
       "mobile": "Mobile Apps",
-      "mobileDesc": "Native & cross-platform apps",
+      "mobileDesc": "Native and cross-platform mobile applications for iOS and Android",
       "custom": "Custom Solutions",
       "customDesc": "Tailored software solutions"
     }

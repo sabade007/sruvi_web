@@ -1,36 +1,54 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Button } from "@heroui/react";
 import { ArrowRight, Globe, Smartphone, Code, Database, Palette, Shield, Zap, Users, BarChart3, Cloud, Brain, TrendingUp, Lightbulb } from "lucide-react";
 import { Link } from '@/i18n/navigation';
+import { useEffect, useState } from 'react';
 
 export default function Services() {
   const t = useTranslations();
+  const prefersReducedMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Simplified animations for mobile and reduced motion preferences
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.2
+        duration: prefersReducedMotion ? 0.3 : 0.6,
+        staggerChildren: prefersReducedMotion ? 0.1 : 0.15
       }
     }
   };
 
   const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { y: prefersReducedMotion ? 0 : 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.8,
-
+        duration: prefersReducedMotion ? 0.3 : 0.5,
+        ease: "easeOut" as const
       }
     }
   };
+
+  // Disable complex animations on mobile or when reduced motion is preferred
+  const shouldAnimate = !prefersReducedMotion && !isMobile;
 
   // Service-specific features arrays
   const serviceFeatures = {
@@ -93,59 +111,53 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-background via-background to-primary/5 dark:from-background dark:via-background dark:to-primary/5 overflow-hidden">
-      {/* Background Elements */}
+    <section className="relative py-16 md:py-20 bg-gradient-to-br from-background via-background to-primary/5 dark:from-background dark:via-background dark:to-primary/5 overflow-hidden">
+      {/* Simplified Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.5, 0.2],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity
-          }}
-        />
+        {shouldAnimate ? (
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-48 h-48 md:w-64 md:h-64 bg-primary/5 rounded-full blur-2xl md:blur-3xl"
+            animate={{
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        ) : (
+          <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-64 md:h-64 bg-primary/5 rounded-full blur-2xl md:blur-3xl"></div>
+        )}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4">
+      {/* Main Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.div variants={itemVariants} className="mb-4">
-            <span className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm border border-divider rounded-full px-4 py-2 text-sm font-medium text-primary">
-              <Zap className="w-4 h-4" />
-              {t('services.badge')}
-            </span>
+          <motion.div
+            variants={itemVariants}
+            className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6"
+          >
+            {t('services.badge')}
           </motion.div>
           
-                     <motion.h2 
-             variants={itemVariants}
-             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent leading-tight py-2"
-           >
-             {t('services.title')}
-           </motion.h2>
-          
-          <motion.p 
+          <motion.h2
             variants={itemVariants}
-            className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+          >
+            {t('services.title')}
+          </motion.h2>
+          
+          <motion.p
+            variants={itemVariants}
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
             {t('services.subtitle')}
           </motion.p>
@@ -153,96 +165,109 @@ export default function Services() {
 
         {/* Services Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, margin: "-50px" }}
         >
           {services.map((service, index) => (
             <motion.div
-              key={index}
+              key={service.key}
               variants={itemVariants}
               className="group relative"
             >
-                             <div className="relative bg-background/80 backdrop-blur-xl border border-divider/50 rounded-2xl p-8 h-full hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+              <motion.div
+                className="relative bg-card border border-divider rounded-xl md:rounded-2xl p-6 md:p-8 hover:shadow-lg transition-all duration-200"
+                whileHover={shouldAnimate ? { y: -5 } : {}}
+                whileTap={shouldAnimate ? { scale: 0.98 } : {}}
+                transition={{ duration: 0.2 }}
+              >
                 {/* Service Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-2xl mb-6 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="w-8 h-8 text-white" />
+                <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r ${service.color} rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-105 transition-transform duration-200`}>
+                  <service.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
 
                 {/* Service Title */}
-                <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
                   {service.title}
                 </h3>
 
                 {/* Service Description */}
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
                   {service.description}
                 </p>
 
                 {/* Service Features */}
-                <div className="space-y-2 mb-6">
-                  {getServiceFeatures(service.key).map((feature: string, featureIndex: number) => (
-                    <div key={featureIndex} className="flex items-center gap-2">
-                      <div className={`w-2 h-2 bg-gradient-to-r ${service.color} rounded-full`} />
-                      <span className="text-sm text-foreground/80">{feature}</span>
-                    </div>
+                <ul className="space-y-2 mb-6 md:mb-8">
+                  {getServiceFeatures(service.key).map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center gap-2 text-sm">
+                      <div className={`w-2 h-2 bg-gradient-to-r ${service.color} rounded-full`}></div>
+                      {feature}
+                    </li>
                   ))}
-                </div>
+                </ul>
 
-                                 {/* Learn More Button */}
-                 <Button
-                   as={Link}
-                   href="/services"
-                   variant="ghost"
-                   className="text-primary hover:text-primary/80 px-4 py-2 h-auto font-medium group-hover:translate-x-2 transition-transform duration-300 rounded-lg"
-                 >
-                   {t('services.learnMore')}
-                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                 </Button>
-              </div>
+                {/* Learn More Button */}
+                <Button
+                  as={Link}
+                  href="/services"
+                  variant="ghost"
+                  className="text-primary hover:text-primary/80 px-4 py-2 h-auto font-medium group-hover:translate-x-1 transition-transform duration-200 rounded-lg"
+                >
+                  {t('services.learnMore')}
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                </Button>
+              </motion.div>
             </motion.div>
           ))}
         </motion.div>
 
         {/* CTA Section */}
         <motion.div
-          className="text-center"
+          className="text-center mt-12 md:mt-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="text-3xl font-bold mb-4 text-foreground">
+          <motion.div variants={itemVariants}>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
               {t('services.cta.title')}
             </h3>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
               {t('services.cta.subtitle')}
             </p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              as="a"
-              href="/contact"
-              className="bg-gradient-to-r from-primary to-accent text-white border-0 shadow-2xl hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6 rounded-2xl"
-              size="lg"
-            >
-              {t('services.cta.primaryButton')}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            
-            <Button 
-              as="a"
-              href="/products"
-              variant="bordered" 
-              className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300 text-lg px-8 py-6 rounded-2xl backdrop-blur-sm"
-              size="lg"
-            >
-              {t('services.cta.secondaryButton')}
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.div
+                whileHover={shouldAnimate ? { scale: 1.02 } : {}}
+                whileTap={shouldAnimate ? { scale: 0.98 } : {}}
+                transition={{ duration: 0.2 }}
+              >
+                <Button
+                  as={Link}
+                  href="/contact"
+                  className="bg-gradient-to-r from-primary to-accent text-white px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl font-semibold hover:shadow-lg transition-all duration-200"
+                >
+                  {t('services.cta.primaryButton')}
+                  <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={shouldAnimate ? { scale: 1.02 } : {}}
+                whileTap={shouldAnimate ? { scale: 0.98 } : {}}
+                transition={{ duration: 0.2 }}
+              >
+                <Button
+                  as={Link}
+                  href="/products"
+                  variant="bordered"
+                  className="border-2 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all duration-200 px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl"
+                >
+                  {t('services.cta.secondaryButton')}
+                </Button>
+              </motion.div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
